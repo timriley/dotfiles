@@ -12,3 +12,6 @@ fi
 precmd() {
   title "zsh" "%m" "%55<...<%~"
 }
+
+export VISUAL=subl
+export EDITOR=$VISUAL
