@@ -1,0 +1,16 @@
+function sc {
+  if [ -x script/rails ]; then
+    script/rails console $*
+  elif [ -x bin/rails ]; then
+    bin/rails console $*
+  elif [ -x script/console ]; then
+    script/console $*
+  else
+    sinatra_rb=`egrep -l "^require.+sinatra.$" *.rb 2>/dev/null`
+    if [ -e $sinatra_rb ]; then
+      irb -r $sinatra_rb $*
+    else
+      irb $*
+    fi
+  fi
+}
