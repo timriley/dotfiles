@@ -1,6 +1,8 @@
 # Git
-alias gd='git diff'
 alias gs='git status'
+alias gd='git diff'
+alias gb='git branch'
+alias gr='git remote -v show'
 
 # Rails
 alias be='bundle exec'
