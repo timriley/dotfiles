@@ -5,6 +5,7 @@ alias notes="subl -n '~/Dropbox (Personal)/Apps/Editorial'"
 alias gs='git status'
 alias gd='git diff'
 alias gb='git branch'
+alias gbr='git branch -r'
 alias gr='git remote -v show'
 
 # Rails
