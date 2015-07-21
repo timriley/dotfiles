@@ -1,0 +1,4 @@
+[
+  {"keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"},
+  {"keys": ["super+alt+n"], "command": "advanced_new_file_new"}
+]

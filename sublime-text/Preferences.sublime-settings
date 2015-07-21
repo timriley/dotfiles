@@ -1,0 +1,48 @@
+{
+  "auto_complete_commit_on_tab": true,
+  "bold_folder_labels": true,
+  "caret_style": "solid",
+  "color_scheme": "Packages/User/Espresso Soda (SL).tmTheme",
+  "ensure_newline_at_eof_on_save": true,
+  "file_exclude_patterns":
+  [
+    ".sqlite3",
+    ".repl_history",
+    ".dat*",
+    ".DS_Store",
+    ".gitkeep",
+    "*.dump*"
+  ],
+  "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    "tmp",
+    ".bundle",
+    ".sass-cache",
+    "log",
+    "vendor/Pods",
+    "*.xcodeproj",
+    "build-iPhoneOS",
+    "build-iPhoneSimulator",
+    "coverage",
+    "node_modules",
+    "assets/build",
+    "assets/shared/vendor",
+    "public/assets"
+  ],
+  "font_size": 12,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage",
+    "Markdown"
+  ],
+  "scroll_past_end": true,
+  "show_tab_close_buttons": false,
+  "tab_size": 2,
+  "theme": "Soda Light 3.sublime-theme",
+  "translate_tabs_to_spaces": true
+}
