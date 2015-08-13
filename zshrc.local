@@ -11,6 +11,11 @@ if $(grc &>/dev/null); then
   source "`brew --prefix`/etc/grc.bashrc"
 fi
 
+# The default WORDCHARS is '*?_-.[]~=/&;!#$%^(){}<>', which includes the '/'
+# character. Removing this means that CTRL+W "delete last word" shortcut will
+# only delete back to the last '/' (e.g. '~/foo/bar/baz' -> '~/foo/bar/').
+export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
 export VISUAL=subl
 export EDITOR=$VISUAL
 
