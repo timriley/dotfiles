@@ -11,7 +11,8 @@
 		".dat*",
 		".DS_Store",
 		".gitkeep",
-		"*.dump*"
+		"*.dump*",
+		"*doc/*.html"
 	],
 	"folder_exclude_patterns":
 	[
@@ -33,7 +34,8 @@
 		"assets/shared/vendor",
 		"public/assets",
 		"capybara-screenshot",
-		".yardoc"
+		".yardoc",
+		"junk"
 	],
 	"highlight_line": true,
 	"ignored_packages":
