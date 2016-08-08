@@ -1,6 +1,7 @@
 [user]
   name = Tim Riley
   email = tim@openmonkey.com
+  signinkey = 82E88BC9
 
 [core]
   editor = subl -n -w
