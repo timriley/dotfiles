@@ -8,14 +8,17 @@
 	[
 		".sqlite3",
 		".repl_history",
+		".byebug_history",
 		".dat*",
 		".DS_Store",
 		".gitkeep",
 		"*.dump*",
-		"*doc/*.html"
+		"spec/examples.txt",
+		"spec/junit.xml",
 	],
 	"folder_exclude_patterns":
 	[
+		".tmp",
 		".svn",
 		".git",
 		".hg",
@@ -23,7 +26,7 @@
 		"tmp",
 		".bundle",
 		".sass-cache",
-		"log",
+		"/log",
 		"vendor/Pods",
 		"*.xcodeproj",
 		"build-iPhoneOS",
@@ -35,13 +38,15 @@
 		"public/assets",
 		"capybara-screenshot",
 		".yardoc",
-		"junk"
+		"junk",
+		"doc",
 	],
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage",
-		"Markdown"
+		"Markdown",
+		"Ruby",
 	],
 	"scroll_past_end": true,
 	"show_tab_close_buttons": false,
