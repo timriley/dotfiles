@@ -4,7 +4,7 @@
   signinkey = 82E88BC9
 
 [core]
-  editor = subl -n -w
+  editor = code -n -w
 
 [commit]
   gpgsign = true

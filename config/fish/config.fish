@@ -7,7 +7,7 @@ status --is-interactive; and . (nodenv init -|psub)
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showcolorhints 'yes'
 
-set --export EDITOR "subl"
+set --export EDITOR "code"
 
 set --export HOMEBREW_CASK_OPTS "--appdir=/Applications"
 
