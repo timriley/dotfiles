@@ -1,0 +1,49 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontFamily": "SFMono-Regular, Menlo, monospace",
+  "editor.fontSize": 12, // was 12
+  "editor.tabSize": 2,
+  "editor.renderIndentGuides": true,
+  "workbench.activityBar.visible": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.snippetSuggestions": "top",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/.byebug_history": true,
+    "spec/examples.txt": true,
+    "spec/junit.xml": true,
+    "coverage/**/*": true,
+    "tmp/**/capybara-*": true,
+    "**/*.log": true,
+    "tmp/*": true
+  },
+  "editor.acceptSuggestionOnEnter": "on",
+  "ruby.lint": {
+    "ruby": true
+  },
+  "diffEditor.renderSideBySide": false,
+  "git.autofetch": false,
+  "window.zoomLevel": 0,
+  "window.newWindowDimensions": "inherit",
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.welcome.enabled": false,
+  "window.openFilesInNewWindow": "off",
+  "workbench.quickOpen.closeOnFocusLost": false,
+  "workbench.colorTheme": "Espresso Soda",
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "none",
+  "workbench.statusBar.visible": true,
+  "editor.find.seedSearchStringFromSelection": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "gitlens.blame.line.enabled": false,
+  "gitlens.codeLens.locations": [
+    "custom"
+  ],
+  "extensions.ignoreRecommendations": true,
+  "editor.autoIndent": true
+}
