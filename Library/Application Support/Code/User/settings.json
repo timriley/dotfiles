@@ -1,7 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.fontFamily": "SFMono-Regular, Menlo, monospace",
-  "editor.fontSize": 12, // was 12
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.activityBar.visible": false,
