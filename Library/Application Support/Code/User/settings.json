@@ -49,6 +49,7 @@
   "extensions.ignoreRecommendations": true,
   "editor.autoIndent": true
   "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
