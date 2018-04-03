@@ -1,5 +1,5 @@
 # Turn off the default greeting
-set --erase fish_greeting
+set fish_greeting
 
 status --is-interactive; and . (rbenv init -|psub)
 status --is-interactive; and . (nodenv init -|psub)
