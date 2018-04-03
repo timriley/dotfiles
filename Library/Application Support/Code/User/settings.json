@@ -37,7 +37,6 @@
   "window.zoomLevel": 0,
   "window.newWindowDimensions": "inherit",
   "workbench.editor.tabCloseButton": "off",
-  "workbench.welcome.enabled": false,
   "window.openFilesInNewWindow": "off",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.colorTheme": "Espresso Soda",
@@ -53,4 +52,5 @@
   ],
   "extensions.ignoreRecommendations": true,
   "editor.autoIndent": true
+  "workbench.startupEditor": "newUntitledFile",
 }
