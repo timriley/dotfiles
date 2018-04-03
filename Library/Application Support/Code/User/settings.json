@@ -51,6 +51,16 @@
   "docker.showExplorer": false, // Hide annoying sidebar section
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
+  "editor.tokenColorCustomizations": {
+    "[Espresso Soda]": {
+      "textMateRules": [
+        {
+          "scope": "constant.other.symbol",
+          "settings": {"fontStyle": ""}
+        }
+      ]
+    },
+  },
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
