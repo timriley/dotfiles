@@ -46,11 +46,22 @@
   "workbench.statusBar.visible": true,
   "editor.find.seedSearchStringFromSelection": false,
   "terminal.external.osxExec": "iTerm.app",
-  "gitlens.blame.line.enabled": false,
-  "gitlens.codeLens.locations": [
-    "custom"
-  ],
   "extensions.ignoreRecommendations": true,
   "editor.autoIndent": true
   "workbench.startupEditor": "newUntitledFile",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.keymap": "alternate",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  }
 }
