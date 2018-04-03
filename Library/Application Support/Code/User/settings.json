@@ -18,7 +18,15 @@
     "coverage/**/*": true,
     "tmp/**/capybara-*": true,
     "**/*.log": true,
-    "tmp/*": true
+    "tmp/*": true,
+    "assets/build/*": true,
+    "**/node_modules": true,
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "assets/build": true,
+    "public/assets": true
   },
   "editor.acceptSuggestionOnEnter": "on",
   "ruby.lint": {
