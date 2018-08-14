@@ -65,15 +65,12 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.enabled": false,
-  "gitlens.keymap": "alternate",
   "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
+    "suppressResultsExplorerNotice": true,
     "suppressShowKeyBindingsNotice": true
-  }
+  },
+  "solargraph.diagnostics": false,
+  "workbench.editor.showTabs": true,
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.keymap": "alternate"
 }
