@@ -1,6 +1,9 @@
 # Turn off the default greeting
 set fish_greeting
 
+# Add Postgres.app tools to path, but before asdf inits, so asdf's shims end up first
+set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
+
 status --is-interactive; and . (rbenv init -|psub)
 status --is-interactive; and . (nodenv init -|psub)
 status --is-interactive; and source ~/.asdf/asdf.fish
