@@ -3,6 +3,7 @@ set fish_greeting
 
 status --is-interactive; and . (rbenv init -|psub)
 status --is-interactive; and . (nodenv init -|psub)
+status --is-interactive; and source ~/.asdf/asdf.fish
 status --is-interactive; and source ~/.config/fish/integrations/iterm2.fish
 
 set __fish_git_prompt_showdirtystate 'yes'
