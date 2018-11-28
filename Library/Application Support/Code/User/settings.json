@@ -8,19 +8,19 @@
   "files.trimTrailingWhitespace": true,
   "editor.snippetSuggestions": "top",
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/.DS_Store": true,
     "**/.byebug_history": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/*.log": true,
+    "**/node_modules": true,
+    "assets/build/*": true,
+    "coverage/**/*": true,
     "spec/examples.txt": true,
     "spec/junit.xml": true,
-    "coverage/**/*": true,
-    "tmp/**/capybara-*": true,
-    "**/*.log": true,
     "tmp/*": true,
-    "assets/build/*": true,
-    "**/node_modules": true,
+    "tmp/**/capybara-*": true
   },
   "search.exclude": {
     "**/node_modules": true,
@@ -39,7 +39,6 @@
   "workbench.editor.tabCloseButton": "off",
   "window.openFilesInNewWindow": "off",
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.colorTheme": "Espresso Soda",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
   "editor.renderWhitespace": "none",
@@ -72,5 +71,41 @@
   "solargraph.diagnostics": false,
   "workbench.editor.showTabs": true,
   "gitlens.historyExplorer.enabled": true,
-  "gitlens.keymap": "alternate"
+  "gitlens.keymap": "alternate",
+  "workbench.colorTheme": "Alabaster",
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.feedback.visible": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "details": true,
+      "history": false,
+      "remote": true
+    },
+    "editorGroup": false,
+    "editorTab": {
+      "compare": false,
+      "history": false,
+      "remote": true
+    },
+    "explorer": {
+      "compare": true,
+      "history": true,
+      "remote": true
+    }
+  },
+  "workbench.iconTheme": "vs-minimal",
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolPath": "last",
+  "explorer.confirmDelete": false,
+  "search.location": "sidebar",
+  "githubPullRequests.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ]
 }
