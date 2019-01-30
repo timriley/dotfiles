@@ -5,7 +5,8 @@ if not set -q GH_BASE_DIR
 end
 
 function __gh_remote_cache_clear --argument user
-  set -e GH_REPOS_CACHE_$user
+  # Was just GH_REPOS_CACHE_$user. Fixed to support github names with dashes.
+  set -e GH_REPOS_CACHE_(echo $user | sed 's/-/__/g')
 end
 
 function __gh_remote_repos --argument user
@@ -15,7 +16,8 @@ function __gh_remote_repos --argument user
 end
 
 function __gh_remote_repos_cached --argument user
-  set -l cache_path GH_REPOS_CACHE_$user
+  # Was just GH_REPOS_CACHE_$user. Fixed to support github names with dashes.
+  set -l cache_path GH_REPOS_CACHE_(echo $user | sed 's/-/__/g')
   if not set -q $cache_path
     set -g $cache_path (__gh_remote_repos $user)
   end
