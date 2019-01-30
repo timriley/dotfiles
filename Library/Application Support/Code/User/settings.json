@@ -8,6 +8,7 @@
   "files.trimTrailingWhitespace": true,
   "editor.snippetSuggestions": "top",
   "files.exclude": {
+    ".pry_history": true,
     "**/.byebug_history": true,
     "**/.DS_Store": true,
     "**/.git": true,
@@ -101,11 +102,6 @@
   "breadcrumbs.symbolPath": "last",
   "explorer.confirmDelete": false,
   "search.location": "sidebar",
-  "githubPullRequests.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ]
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true
 }
