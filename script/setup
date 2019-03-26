@@ -1,0 +1,20 @@
+#!/bin/sh
+# Install dotfiles
+set -e
+
+if ! [ -x "$(command -v rcup)" ]
+then
+  brew tap thoughtbot/formulae
+  brew install rcm
+fi
+RCRC=~/.dotfiles-personal/rcrc rcup
+echo "Personal/Icelab dotfiles installed"
+
+pushd $(dirname "$0") >/dev/null
+./extract-1password-secrets
+popd >/dev/null
+
+if [ "$SHELL" != "/usr/local/bin/fish" ]
+then
+  chsh -s /usr/local/bin/fish tim
+fi
