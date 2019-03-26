@@ -12,6 +12,7 @@ echo "Personal/Icelab dotfiles installed"
 
 pushd $(dirname "$0") >/dev/null
 ./extract-1password-secrets
+./install-vscode-extensions
 popd >/dev/null
 
 if [ "$SHELL" != "/usr/local/bin/fish" ]
