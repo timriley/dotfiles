@@ -1,5 +1,6 @@
 tap "heroku/brew"
 tap "homebrew/cask"
+tap "thoughtbot/formulae"
 
 brew "ack"
 brew "awscli"
@@ -20,6 +21,7 @@ brew "overmind"
 brew "pgcli"
 brew "pgloader"
 brew "pinentry-mac"
+brew "rcm"
 brew "s3cmd"
 brew "wget"
 
