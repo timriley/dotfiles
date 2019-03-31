@@ -29,7 +29,7 @@ brew "wget"
 cask_args appdir: "/Applications"
 cask "1password"
 cask "1password-cli"
-cask "atext"
+# cask "atext" # disable until brew cask formula no longer has download checksum issues
 cask "backblaze"
 cask "brave-browser"
 cask "caffeine"
