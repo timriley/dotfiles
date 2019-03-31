@@ -1,7 +1,7 @@
 function fish_title
   if test $_ = 'fish'
-    pwd
+    prompt_pwd
   else
-    echo $_
+    echo (echo $_) (prompt_pwd)
   end
 end
