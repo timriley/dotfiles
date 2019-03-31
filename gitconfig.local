@@ -3,6 +3,9 @@
   email = tim@openmonkey.com
   signinkey = 82E88BC9
 
+[github]
+	user = timriley
+
 [core]
   editor = code -n -w
 
@@ -20,4 +23,3 @@
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -
   merge-branch = !git checkout master && git merge @{-1}
   fetch-branch = !sh -c 'git fetch origin && git checkout --track -b $1 origin/$1' -
-
