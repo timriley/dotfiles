@@ -4,7 +4,6 @@ set fish_greeting
 # Add Postgres.app tools to path, but before asdf inits, so asdf's shims end up first
 set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
 
-status --is-interactive; and source ~/.config/fish/integrations/iterm2.fish
 status --is-interactive; and source /usr/local/opt/asdf/asdf.fish
 
 set __fish_git_prompt_showdirtystate 'yes'
