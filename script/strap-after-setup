@@ -1,0 +1,12 @@
+#!/bin/sh
+# Run by Strap after installing Brewfile dependencies
+set -e
+
+cd $(dirname "$0")
+./extract-1password-secrets
+./install-vscode-extensions
+
+if [ "$SHELL" != "/usr/local/bin/fish" ]
+then
+  chsh -s /usr/local/bin/fish tim
+fi
