@@ -98,6 +98,7 @@ mas "Shush", id: 496437906
 mas "Sip", id: 507257563
 mas "SiteSucker", id: 442168834
 mas "Soulver", id: 413965349
+mas "Tabs to Links", id: 1451408472
 mas "The Unarchiver", id: 425424353
 mas "Things3", id: 904280696
 mas "Tomato One", id: 907364780
