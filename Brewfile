@@ -31,7 +31,6 @@ cask "1password"
 cask "1password-cli"
 # cask "atext" # disable until brew cask formula no longer has download checksum issues
 cask "backblaze"
-cask "brave-browser"
 cask "caffeine"
 cask "charles"
 cask "dash"
