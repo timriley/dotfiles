@@ -79,6 +79,7 @@ cask "visual-studio-code"
 cask "vlc"
 
 mas "1Blocker", id: 1107421413
+mas "BBEdit", id: 404009241
 mas "DaisyDisk", id: 411643860
 mas "Diptic", id: 526546615
 mas "Divvy", id: 413857545
