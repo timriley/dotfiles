@@ -4,7 +4,7 @@
   signinkey = 82E88BC9
 
 [github]
-	user = timriley
+  user = timriley
 
 [core]
   editor = code -n -w
