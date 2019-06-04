@@ -1,5 +1,6 @@
 tap "heroku/brew"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "thoughtbot/formulae"
 
 brew "ack"
@@ -27,6 +28,7 @@ brew "wget"
 # TODO ngrok, pygments.py
 
 cask_args appdir: "/Applications"
+
 cask "1password"
 cask "1password-cli"
 # cask "atext" # disable until brew cask formula no longer has download checksum issues
@@ -67,6 +69,7 @@ cask "paw"
 cask "postgres"
 cask "postico"
 cask "reveal"
+cask "safari-technology-preview"
 cask "skype"
 cask "slack"
 cask "sublime-merge" # TODO symlink the bin file
