@@ -103,5 +103,8 @@
   "explorer.confirmDelete": false,
   "search.location": "sidebar",
   "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true
+  "gitlens.views.lineHistory.enabled": true,
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  }
 }

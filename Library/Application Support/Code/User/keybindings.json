@@ -47,5 +47,10 @@
     "key": "cmd+ctrl+enter",
     "command": "git.unstageSelectedRanges",
     "when": "textCompareEditorVisible && editorHasSelection"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.files.action.showActiveFileInExplorer",
+    "when": "editorFocus"
   }
 ]
