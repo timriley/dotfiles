@@ -8,7 +8,7 @@ brew "awscli"
 brew "cloc"
 brew "duply"
 brew "ffmpeg"
-brew "fish"
+brew "fish", args: %w[HEAD]
 brew "freetds"
 brew "graphviz"
 brew "heroku"
