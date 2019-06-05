@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+if [ ! -d ~/.hammerspoon/Spoons/SpoonInstall.spoon ]; then
+  mkdir -p ~/.hammerspoon/Spoons
+  cd ~/.hammerspoon/Spoons
+  curl --silent -OL https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip
+  unzip SpoonInstall.spoon.zip
+  rm SpoonInstall.spoon.zip
+fi
