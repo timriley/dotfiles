@@ -4,14 +4,15 @@ Used in conjunction with [icelab/dotfiles](http://github.com/icelab/dotfiles).
 
 ## Installation
 
-```sh
-brew tap thoughtbot/formulae
-brew install rcm
+These dotfiles are automatically installed by [Strap](https://icelab-strap.herokuapp.com).
 
+To install them manually:
+
+```sh
 git clone https://github.com/timriley/dotfiles.git ~/.dotfiles
 git clone https://github.com/icelab/dotfiles.git ~/.dotfiles-icelab
 
-env RCRC=~/.dotfiles/rcrc rcup -d ~/.dotfiles ~/.dotfiles-icelab
+~/.dotfiles/script/setup
 ```
 
 ## Credits
