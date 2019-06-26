@@ -24,6 +24,7 @@ brew "pgloader"
 brew "pinentry-mac"
 brew "rcm"
 brew "s3cmd"
+brew "shellcheck"
 brew "wget"
 
 # TODO ngrok, pygments.py
@@ -75,10 +76,10 @@ cask "sublime-merge" # TODO symlink the bin file
 cask "superduper"
 cask "transmission"
 cask "transmit"
-cask "vagrant"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
+cask "zulip"
 
 mas "1Blocker", id: 1107421413
 mas "BBEdit", id: 404009241
