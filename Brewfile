@@ -80,6 +80,7 @@ cask "sublime-merge" # TODO symlink the bin file
 cask "superduper"
 cask "transmission"
 cask "transmit"
+cask "tunnelblick"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
