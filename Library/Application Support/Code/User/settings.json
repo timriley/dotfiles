@@ -70,7 +70,6 @@
     "suppressShowKeyBindingsNotice": true
   },
   "solargraph.diagnostics": false,
-  "workbench.editor.showTabs": true,
   "gitlens.historyExplorer.enabled": true,
   "gitlens.keymap": "alternate",
   "workbench.colorTheme": "Alabaster",
@@ -97,7 +96,6 @@
       "remote": true
     }
   },
-  "workbench.iconTheme": "vs-minimal",
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "last",
   "explorer.confirmDelete": false,
@@ -106,5 +104,8 @@
   "gitlens.views.lineHistory.enabled": true,
   "[json]": {
     "editor.defaultFormatter": "HookyQR.beautify"
-  }
+  },
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 10,
+  "workbench.iconTheme": "vs-minimal"
 }
