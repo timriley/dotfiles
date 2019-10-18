@@ -73,7 +73,6 @@ cask "postgres"
 cask "postico"
 cask "proxyman"
 cask "reveal"
-cask "safari-technology-preview"
 cask "skype"
 cask "slack"
 cask "sublime-merge" # TODO symlink the bin file
@@ -89,10 +88,12 @@ cask "zulip"
 mas "1Blocker", id: 1107421413
 mas "BBEdit", id: 404009241
 mas "DaisyDisk", id: 411643860
+mas "Dato", id: 1470584107
 mas "Diptic", id: 526546615
 mas "Divvy", id: 413857545
 mas "HTTP Client", id: 418138339
 mas "iA Writer", id: 775737590
+mas "Instapaper Save", id: 1481302432
 mas "iStat Mini", id: 927292435
 mas "Keynote", id: 409183694
 mas "Marked", id: 448925439
