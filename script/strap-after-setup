@@ -6,6 +6,7 @@ cd $(dirname "$0")
 ./extract-1password-secrets
 ./bootstrap-hammerspoon
 ./install-vscode-extensions
+./install-heroku-plugins
 
 if [ "$SHELL" != "/usr/local/bin/fish" ]
 then
