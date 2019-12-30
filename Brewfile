@@ -85,7 +85,7 @@ cask "visual-studio-code"
 cask "vlc"
 cask "zulip"
 
-mas "1Blocker", id: 1107421413
+mas "AdGuard for Safari", id: 1440147259
 mas "Agenda.", id: 1287445660
 mas "BBEdit", id: 404009241
 mas "DaisyDisk", id: 411643860
