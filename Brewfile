@@ -19,6 +19,7 @@ brew "httpie"
 brew "hub"
 brew "jq"
 brew "libdvdcss"
+brew "moreutils"
 brew "mysql@5.7" # no asdf plugin for this and occasionally I need it
 brew "overmind"
 brew "p7zip"
