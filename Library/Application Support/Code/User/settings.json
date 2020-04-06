@@ -15,6 +15,7 @@
     "**/.hg": true,
     "**/.svn": true,
     "**/*.log": true,
+    "**/cdk.out": true,
     "**/node_modules": true,
     "assets/build/*": true,
     "coverage/**/*": true,
