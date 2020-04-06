@@ -1,5 +1,4 @@
-postgres 11.3
-java system
-nodejs 10.15.3
-ruby 2.6.5
-mysql 8.0.15
+postgres 11.5
+java adopt-openjdk-13.0.2+8
+nodejs 12.16.1
+ruby 2.7.1
