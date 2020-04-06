@@ -108,6 +108,7 @@
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 10,
   "workbench.iconTheme": "vs-minimal",
-  "workbench.colorTheme": "Alabaster"
   "editor.fontSize": 13,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Alabaster",
 }
