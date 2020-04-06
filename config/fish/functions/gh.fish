@@ -19,7 +19,7 @@ function gh -d "manage git repos"
 
   set -l path $GH_BASE_DIR/$git_host/$repo
   if not test -d $path
-    git clone https://$git_host/$repo.git $path
+    git clone --recursive https://$git_host/$repo.git $path
     cd $path; and git branch --set-upstream-to=origin/master master
   end
 
