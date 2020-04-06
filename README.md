@@ -1,4 +1,4 @@
-# Tim’s dotfiles
+# Tim’s dotfiles & personal computing environment
 
 Used in conjunction with [cultureamp/web-team-dotfiles][web-team-dotfiles].
 
