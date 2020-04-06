@@ -99,7 +99,6 @@
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "last",
   "explorer.confirmDelete": false,
-  "search.location": "sidebar",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
   "[json]": {
@@ -111,4 +110,6 @@
   "editor.fontSize": 13,
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "Alabaster",
+  "search.enableSearchEditorPreview": true,
+  "search.useGlobalIgnoreFiles": true
 }
