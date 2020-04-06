@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "SFMono-Regular, Menlo, monospace",
+  "editor.fontFamily": "JetBrainsMono-Regular, Menlo, monospace",
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.activityBar.visible": false,
@@ -108,4 +108,5 @@
   "workbench.tree.indent": 10,
   "workbench.iconTheme": "vs-minimal",
   "workbench.colorTheme": "Alabaster"
+  "editor.fontSize": 13,
 }
