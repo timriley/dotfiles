@@ -8,9 +8,9 @@ Install:andUse("URLDispatcher",
   {
     config = {
       url_patterns = {
-        { "https?://3.basecamp.com", "org.mozilla.firefox" },
-        { "https?://basecamp.com", "org.mozilla.firefox" },
-        { "https?://app.everhour.com", "org.mozilla.firefox" },
+        -- { "https?://3.basecamp.com", "org.mozilla.firefox" },
+        -- { "https?://basecamp.com", "org.mozilla.firefox" },
+        -- { "https?://app.everhour.com", "org.mozilla.firefox" },
       },
       default_handler = "com.apple.Safari"
     },
