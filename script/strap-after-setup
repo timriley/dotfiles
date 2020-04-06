@@ -20,6 +20,7 @@ if [ ! -e ~/Documents/Files/Screenshots ]; then
   mkdir -p ~/Documents/Files/Screenshots
 fi
 
+# TODO: need to add /usr/local/bin/fish to /etc/shells
 if [ "$SHELL" != "/usr/local/bin/fish" ]
 then
   chsh -s /usr/local/bin/fish tim
