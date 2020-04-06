@@ -8,6 +8,18 @@ cd $(dirname "$0")
 ./install-vscode-extensions
 ./install-heroku-plugins
 
+if [ ! -e ~/Source ]; then
+  mkdir ~/Source
+fi
+if [ ! -e ~/src ]; then
+  ln -s ~/Source ~/src
+  chflags -h hidden ~/src
+fi
+
+if [ ! -e ~/Documents/Files/Screenshots ]; then
+  mkdir -p ~/Documents/Files/Screenshots
+fi
+
 if [ "$SHELL" != "/usr/local/bin/fish" ]
 then
   chsh -s /usr/local/bin/fish tim
