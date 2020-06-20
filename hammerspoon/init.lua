@@ -8,6 +8,7 @@ Install:andUse("URLDispatcher",
   {
     config = {
       url_patterns = {
+        {"zoom.us/j/", "us.zoom.xos"}
         -- { "https?://3.basecamp.com", "org.mozilla.firefox" },
         -- { "https?://basecamp.com", "org.mozilla.firefox" },
         -- { "https?://app.everhour.com", "org.mozilla.firefox" },
