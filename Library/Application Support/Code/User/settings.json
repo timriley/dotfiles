@@ -111,5 +111,8 @@
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "Alabaster",
   "search.enableSearchEditorPreview": true,
-  "search.useGlobalIgnoreFiles": true
+  "search.useGlobalIgnoreFiles": true,
+  "files.associations": {
+    "Dockerfile.*": "dockerfile"
+  }
 }
