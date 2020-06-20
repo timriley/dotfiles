@@ -9,6 +9,7 @@ brew "ack"
 brew "asdf"
 brew "awscli"
 brew "cloc"
+brew "dive"
 brew "duply"
 brew "exa"
 brew "ffmpeg"
@@ -60,6 +61,7 @@ cask "iina"
 cask "iterm2"
 cask "imageoptim"
 cask "java"
+cask "keyboard-maestro"
 cask "lastpass"
 cask "launchbar"
 cask "licecap"
@@ -82,6 +84,7 @@ cask "transmit"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
+cask "zoom-in"
 cask "zulip"
 
 # Provided by work:
@@ -91,10 +94,12 @@ cask "zulip"
 mas "AdGuard for Safari", id: 1440147259
 mas "Agenda.", id: 1287445660
 mas "BBEdit", id: 404009241
+mas "Boop", id: 1518425043
 mas "DaisyDisk", id: 411643860
 mas "Dato", id: 1470584107
 mas "Diptic", id: 526546615
 mas "Divvy", id: 413857545
+mas "GoodLinks", id: 1474335294
 mas "iA Writer", id: 775737590
 mas "Instapaper Save", id: 1481302432
 mas "iStat Mini", id: 927292435
