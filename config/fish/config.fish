@@ -13,9 +13,6 @@ end
 
 source /usr/local/opt/asdf/asdf.fish
 
-set __fish_git_prompt_showdirtystate 'yes'
-set __fish_git_prompt_showcolorhints 'yes'
-
 source ~/.secrets.fish
 
 set --export EDITOR "code"
