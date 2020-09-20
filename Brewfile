@@ -33,6 +33,7 @@ brew "pspg"
 brew "rcm"
 brew "s3cmd"
 brew "shellcheck"
+brew "tree"
 brew "wget"
 brew "yarn"
 
@@ -44,6 +45,7 @@ cask "atext"
 cask "aws-vault"
 cask "backblaze"
 cask "caffeine"
+cask "calibre"
 cask "dash"
 cask "deckset"
 cask "discord"
@@ -103,8 +105,9 @@ mas "GoodLinks", id: 1474335294
 mas "iA Writer", id: 775737590
 mas "Instapaper Save", id: 1481302432
 mas "iStat Mini", id: 927292435
+mas "Kindle", id: 405399194
 mas "Keynote", id: 409183694
-mas "Marked", id: 448925439
+mas "Marked 2", id: 890031187
 mas "Numbers", id: 409203825
 mas "Okta Extension App", id: 1439967473
 mas "Pages", id: 409201541
@@ -112,14 +115,15 @@ mas "Pathology", id: 877848776
 mas "Patterns", id: 429449079
 mas "PDFpen", id: 403624960
 mas "Pixelmator", id: 407963104
+mas "Poolside FM", id: 1514817810
 mas "Reeder", id: 880001334
 mas "Shush", id: 496437906
 mas "Sip", id: 507257563
 mas "SiteSucker", id: 442168834
 mas "Soulver", id: 413965349
 mas "Tabs to Links", id: 1451408472
+mas "TaskPaper", id: 1090940630
 mas "The Unarchiver", id: 425424353
-mas "Things3", id: 904280696
 mas "Tomato One", id: 907364780
 mas "Tot", id: 1491071483
 mas "Trello", id: 1384080005
