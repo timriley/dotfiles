@@ -48,7 +48,7 @@
   "editor.find.seedSearchStringFromSelection": false,
   "terminal.external.osxExec": "iTerm.app",
   "extensions.ignoreRecommendations": true,
-  "editor.autoIndent": true,
+  "editor.autoIndent": "full",
   "docker.showExplorer": false, // Hide annoying sidebar section
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
