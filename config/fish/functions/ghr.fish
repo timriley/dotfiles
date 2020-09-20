@@ -1,4 +1,6 @@
 # From https://github.com/jdxcode/gh
+#
+# Renamed to ghr ("github repo") to avoid conflicts with the official gh CLI
 
 if not set -q GH_BASE_DIR
     set GH_BASE_DIR $HOME/src
