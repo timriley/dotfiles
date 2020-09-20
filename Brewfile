@@ -1,7 +1,6 @@
 tap "heroku/brew"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "github/gh"
 tap "icelab/devtools"
 tap "thoughtbot/formulae"
 
@@ -16,7 +15,7 @@ brew "ffmpeg"
 brew "figlet"
 brew "fish", args: %w[HEAD]
 brew "freetds"
-brew "github/gh/gh"
+brew "gh"
 brew "gpg"
 brew "graphviz"
 brew "heroku"
