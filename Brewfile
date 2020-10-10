@@ -86,7 +86,7 @@ cask "transmit"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
-cask "zoom-in"
+cask "zoomin"
 cask "zulip"
 
 # Provided by work:
