@@ -10,6 +10,9 @@ brew bundle --file=- <<EOF
 EOF
 RCRC=~/.dotfiles/rcrc rcup
 
+# Install applications
+brew bundle --global
+
 # ༼ つ ◕_◕ ༽つ Give SETUP
 ./extract-1password-secrets
 ./bootstrap-hammerspoon
