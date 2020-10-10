@@ -1,7 +1,7 @@
 tap "heroku/brew"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "icelab/devtools"
+tap "cultureamp/web-team-devtools"
 tap "thoughtbot/formulae"
 
 brew "ack"
