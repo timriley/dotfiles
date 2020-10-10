@@ -19,6 +19,9 @@ set --export EDITOR "code"
 
 set --export HOMEBREW_CASK_OPTS "--appdir=/Applications"
 
+# Default extra options for asdf postgres installations
+set --export POSTGRES_EXTRA_CONFIGURE_OPTIONS "--with-uuid=e2fs"
+
 function fish_user_key_bindings
   # Thanks, https://github.com/fish-shell/fish-shell/issues/905#issuecomment-20559486
   bind \cc 'echo; commandline ""; commandline -f repaint'
