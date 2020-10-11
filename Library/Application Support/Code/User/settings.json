@@ -110,6 +110,9 @@
     "*Brewfile*": "ruby",
     "Dockerfile.*": "dockerfile"
   },
+  "rewrap.wholeComment": false,
+  "rewrap.autoWrap.enabled": false,
+  "rewrap.wrappingColumn": 90,
   "ruby.format": "standard",
   "ruby.useLanguageServer": true,
   "ruby.lint": {
