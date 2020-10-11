@@ -113,6 +113,7 @@
   "rewrap.wholeComment": false,
   "rewrap.autoWrap.enabled": false,
   "rewrap.wrappingColumn": 90,
+  "codespaces.accountProvider": "GitHub",
   "ruby.format": "standard",
   "ruby.useLanguageServer": true,
   "ruby.lint": {
