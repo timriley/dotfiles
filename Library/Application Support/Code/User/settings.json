@@ -31,9 +31,6 @@
     "public/assets": true
   },
   "editor.acceptSuggestionOnEnter": "on",
-  "ruby.lint": {
-    "ruby": true
-  },
   "diffEditor.renderSideBySide": false,
   "git.autofetch": false,
   "window.zoomLevel": 0,
@@ -69,7 +66,6 @@
     "suppressResultsExplorerNotice": true,
     "suppressShowKeyBindingsNotice": true
   },
-  "solargraph.diagnostics": false,
   "gitlens.historyExplorer.enabled": true,
   "gitlens.keymap": "alternate",
   "workbench.sideBar.location": "left",
@@ -113,5 +109,11 @@
   "files.associations": {
     "*Brewfile*": "ruby",
     "Dockerfile.*": "dockerfile"
+  },
+  "ruby.format": "standard",
+  "ruby.useLanguageServer": true,
+  "ruby.lint": {
+    "ruby": true,
+    "standard": true
   }
 }
