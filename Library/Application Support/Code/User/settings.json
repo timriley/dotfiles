@@ -49,7 +49,6 @@
   "terminal.external.osxExec": "iTerm.app",
   "extensions.ignoreRecommendations": true,
   "editor.autoIndent": "full",
-  "docker.showExplorer": false, // Hide annoying sidebar section
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDragAndDrop": false,
   "editor.tokenColorCustomizations": {
@@ -110,7 +109,6 @@
   "editor.fontSize": 13,
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "Alabaster",
-  "search.enableSearchEditorPreview": true,
   "search.useGlobalIgnoreFiles": true,
   "files.associations": {
     "*Brewfile*": "ruby",
