@@ -3,7 +3,6 @@
   "editor.fontFamily": "JetBrainsMono-Regular, Menlo, monospace",
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
-  "workbench.activityBar.visible": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "editor.snippetSuggestions": "top",
@@ -53,23 +52,16 @@
       "textMateRules": [
         {
           "scope": "constant.other.symbol",
-          "settings": {"fontStyle": ""}
+          "settings": { "fontStyle": "" }
         }
       ]
-    },
+    }
   },
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.enabled": false,
-  "gitlens.advanced.messages": {
-    "suppressResultsExplorerNotice": true,
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.historyExplorer.enabled": true,
   "gitlens.keymap": "alternate",
-  "workbench.sideBar.location": "left",
-  "workbench.statusBar.feedback.visible": false,
   "gitlens.menus": {
     "editor": {
       "blame": false,
@@ -91,11 +83,8 @@
       "remote": true
     }
   },
-  "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "last",
   "explorer.confirmDelete": false,
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "[json]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
@@ -114,10 +103,26 @@
   "rewrap.autoWrap.enabled": false,
   "rewrap.wrappingColumn": 90,
   "codespaces.accountProvider": "GitHub",
-  "ruby.format": "standard",
+  "ruby.format": "rubocop",
   "ruby.useLanguageServer": true,
   "ruby.lint": {
     "ruby": true,
-    "standard": true
-  }
+    "rubocop": false
+  },
+  "errorLens.followCursor": "activeLine",
+  "workbench.experimental.useCustomHover": true,
+  "terminal.integrated.tabs.enabled": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.colorTheme": "Alabaster"
 }
