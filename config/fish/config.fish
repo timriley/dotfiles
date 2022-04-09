@@ -11,6 +11,8 @@ for extra_dir in $extra_path_dirs
   set PATH $extra_dir (string match -v $extra_dir $PATH)
 end
 
+direnv hook fish | source
+
 source /usr/local/opt/asdf/asdf.fish
 
 source ~/.secrets.fish
