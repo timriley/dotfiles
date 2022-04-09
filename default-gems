@@ -1,6 +1,5 @@
 bundler
 gem-release
-rubocop
 solargraph
 standard
 webrick
