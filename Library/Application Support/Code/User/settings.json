@@ -2,7 +2,6 @@
 {
   "editor.fontFamily": "JetBrainsMono-Regular, Menlo, monospace",
   "editor.tabSize": 2,
-  "editor.renderIndentGuides": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "editor.snippetSuggestions": "top",
@@ -41,7 +40,6 @@
   "editor.minimap.renderCharacters": false,
   "editor.renderWhitespace": "none",
   "workbench.statusBar.visible": true,
-  "editor.find.seedSearchStringFromSelection": false,
   "terminal.external.osxExec": "iTerm.app",
   "extensions.ignoreRecommendations": true,
   "editor.autoIndent": "full",
@@ -110,7 +108,6 @@
     "rubocop": false
   },
   "errorLens.followCursor": "activeLine",
-  "workbench.experimental.useCustomHover": true,
   "terminal.integrated.tabs.enabled": true,
   "workbench.editor.untitled.hint": "hidden",
   "todo-tree.general.tags": [
