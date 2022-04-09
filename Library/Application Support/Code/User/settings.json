@@ -105,7 +105,7 @@
   "ruby.useLanguageServer": true,
   "ruby.lint": {
     "ruby": true,
-    "rubocop": false
+    "rubocop": true
   },
   "errorLens.followCursor": "activeLine",
   "terminal.integrated.tabs.enabled": true,
