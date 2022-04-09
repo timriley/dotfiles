@@ -20,6 +20,7 @@ source ~/.secrets.fish
 set --export EDITOR "code"
 
 set --export HOMEBREW_CASK_OPTS "--appdir=/Applications"
+set --export HOMEBREW_NO_AUTO_UPDATE "1"
 
 # Default extra options for asdf postgres installations
 set --export POSTGRES_EXTRA_CONFIGURE_OPTIONS "--with-uuid=e2fs"
