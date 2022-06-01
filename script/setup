@@ -33,8 +33,8 @@ if [ ! -e ~/Documents/Files/Screenshots ]; then
 fi
 
 # Set my default shell to fish
-# TODO: need to add /usr/local/bin/fish to /etc/shells
-if [ "$SHELL" != "/usr/local/bin/fish" ]
+# TODO: need to add /opt/homebrew/bin/fish to /etc/shells
+if [ "$SHELL" != "/opt/homebrew/bin/fish" ]
 then
-  chsh -s /usr/local/bin/fish tim
+  chsh -s /opt/homebrew/bin/fish tim
 fi
