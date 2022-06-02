@@ -17,7 +17,6 @@ brew bundle --global
 # ./extract-1password-secrets
 ./bootstrap-hammerspoon
 ./install-vscode-extensions
-./install-heroku-plugins
 
 # Create additional directories
 if [ ! -e ~/Source ]; then
