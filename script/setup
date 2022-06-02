@@ -3,6 +3,10 @@ set -e
 
 cd $(dirname "$0")
 
+# Install Rosetta (required for iTerm2's Python API; this install should have been
+# triggered automatically by iTerm, see https://gitlab.com/gnachman/iterm2/-/issues/10083)
+softwareupdate --install-rosetta
+
 # Install dotfiles
 brew bundle --file=- <<EOF
   tap "thoughtbot/formulae"
