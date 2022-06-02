@@ -14,7 +14,7 @@ RCRC=~/.dotfiles/rcrc rcup
 brew bundle --global
 
 # ༼ つ ◕_◕ ༽つ Give SETUP
-./extract-1password-secrets
+# ./extract-1password-secrets
 ./bootstrap-hammerspoon
 ./install-vscode-extensions
 ./install-heroku-plugins
