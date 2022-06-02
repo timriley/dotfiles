@@ -1,0 +1,134 @@
+{{- if (eq .chezmoi.os "darwin") -}}
+#!/bin/bash
+
+set -eufo pipefail
+
+{{ $taps := list
+  "golangci/tap"
+  "homebrew/cask"
+  "homebrew/cask-fonts"
+  "homebrew/cask-versions" -}}
+
+{{ $brews := list
+  "ack"
+  "asdf"
+  "cloc"
+  "direnv"
+  "exa"
+  "ffmpeg"
+  "figlet"
+  "fish"
+  "gh"
+  "golangci-lint"
+  "graphviz"
+  "httpie"
+  "jq"
+  "libdvdcss"
+  "moreutils"
+  "overmind"
+  "p7zip"
+  "pgcli"
+  "pspg"
+  "shellcheck"
+  "tree"
+  "wget"
+  "yarn" -}}
+
+{{/* Dependencies for building postgres via asdf */}}
+{{ $brews = concat $brews (list
+  "gcc"
+  "readline"
+  "zlib"
+  "curl"
+  "ossp-uuid") -}}
+
+{{ $casks := list
+  "1password"
+  "1password-cli"
+  "aws-vault"
+  "backblaze"
+  "bartender"
+  "bike"
+  "caffeine"
+  "dash"
+  "deckset"
+  "discord"
+  "docker"
+  "fantastical"
+  "firefox"
+  "font-jetbrains-mono"
+  "hammerspoon"
+  "handbrake"
+  "hazel"
+  "iina"
+  "istat-menus"
+  "iterm2"
+  "imageoptim"
+  "keyboard-maestro"
+  "keyboardcleantool"
+  "launchbar"
+  "menuwhere"
+  "monodraw"
+  "muzzle"
+  "netnewswire"
+  "numi"
+  "openemu"
+  "paw"
+  "pika"
+  "postico"
+  "radio-silence"
+  "skype"
+  "slack"
+  "superduper"
+  "tower"
+  "transmission"
+  "transmit"
+  "visual-studio-code"
+  "vlc"
+  "zoom"
+  "zulip" -}}
+{{/* Disabled casks for now: calibre */}}
+
+{{ $apps := list
+  "1password for Safari -> 1569813296"
+  "Acorn 7 -> 1547371478"
+  "AdGuard for Safari -> 1440147259"
+  "BBEdit -> 404009241"
+  "Boop -> 1518425043"
+  "DaisyDisk -> 411643860"
+  "GoodLinks -> 1474335294"
+  "Hush Nag Blocker -> 1544743900"
+  "iA Writer -> 775737590"
+  "Kindle -> 405399194"
+  "Keynote -> 409183694"
+  "Marked 2 -> 890031187"
+  "Numbers -> 409203825"
+  "Pages -> 409201541"
+  "Pathology -> 877848776"
+  "Patterns -> 429449079"
+  "Poolside FM -> 1514817810"
+  "Shush -> 496437906"
+  "SiteSucker -> 442168834"
+  "Soulver -> 413965349"
+  "Tabs to Links -> 1451408472"
+  "The Unarchiver -> 425424353"
+  "Tweetbot 3 for Twitter -> 1384080005"
+  "xScope -> 447661441"
+  "Yoink -> 457622435" -}}
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+{{ range ($taps | sortAlpha | uniq) -}}
+tap "{{ . }}"
+{{ end -}}
+{{ range ($brews | sortAlpha | uniq) -}}
+brew "{{ . }}"
+{{ end -}}
+{{ range ($casks | sortAlpha | uniq) -}}
+cask "{{ . }}"
+{{ end -}}
+{{ range ($apps | sortAlpha | uniq) -}}
+{{ $app := split " -> " . -}}
+mas "{{ $app._0 }}", id: {{ $app._1 }}
+{{ end -}}
+EOF
+{{ end -}}

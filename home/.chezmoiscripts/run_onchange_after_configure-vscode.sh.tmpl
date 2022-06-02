@@ -1,0 +1,37 @@
+{{ if and (eq .chezmoi.os "darwin" "linux") (not .headless) -}}
+
+{{ $extensions := list
+  "brandoncc.vscode-seeing-is-believing"
+  "brofox86.theme-espresso-soda-light"
+  "castwide.solargraph"
+  "donjayamanne.githistory"
+  "doublefint.pgsql"
+  "eamodio.gitlens"
+  "esbenp.prettier-vscode"
+  "fayras.simple-new-file"
+  "GitHub.vscode-pull-request-github"
+  "HookyQR.beautify"
+  "IBM.output-colorizer"
+  "karunamurti.haml"
+  "keyring.Lua"
+  "lunaryorn.fish-ide"
+  "mdickin.markdown-shortcuts"
+  "ow.vscode-subword-navigation"
+  "rebornix.ruby"
+  "RomanPeshkov.vscode-text-tables"
+  "sianglim.slim"
+  "skyapps.fish-vscode"
+  "stkb.rewrap"
+  "tonsky.theme-alabaster"
+  "wmaurer.change-case"
+  "ziyasal.vscode-open-in-github" -}}
+
+#!/bin/bash
+
+set -eufo pipefail
+
+{{ range $extensions -}}
+code --force --install-extension {{ . }}
+{{ end -}}
+
+{{ end -}}

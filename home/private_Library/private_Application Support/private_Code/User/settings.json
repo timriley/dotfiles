@@ -1,0 +1,123 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontFamily": "JetBrainsMono-Regular, Menlo, monospace",
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.snippetSuggestions": "top",
+  "files.exclude": {
+    ".pry_history": true,
+    "**/.byebug_history": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/*.log": true,
+    "**/cdk.out": true,
+    "**/node_modules": true,
+    "assets/build/*": true,
+    "coverage/**/*": true,
+    "spec/examples.txt": true,
+    "spec/junit.xml": true,
+    "tmp/*": true,
+    "tmp/**/capybara-*": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "assets/build": true,
+    "public/assets": true
+  },
+  "editor.acceptSuggestionOnEnter": "on",
+  "diffEditor.renderSideBySide": false,
+  "git.autofetch": false,
+  "window.newWindowDimensions": "inherit",
+  "workbench.editor.tabCloseButton": "off",
+  "window.openFilesInNewWindow": "off",
+  "workbench.quickOpen.closeOnFocusLost": false,
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "none",
+  "terminal.external.osxExec": "iTerm.app",
+  "extensions.ignoreRecommendations": true,
+  "editor.autoIndent": "full",
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDragAndDrop": false,
+  "editor.tokenColorCustomizations": {
+    "[Espresso Soda]": {
+      "textMateRules": [
+        {
+          "scope": "constant.other.symbol",
+          "settings": { "fontStyle": "" }
+        }
+      ]
+    }
+  },
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.keymap": "alternate",
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "details": true,
+      "history": false,
+      "remote": true
+    },
+    "editorGroup": false,
+    "editorTab": {
+      "compare": false,
+      "history": false,
+      "remote": true
+    },
+    "explorer": {
+      "compare": true,
+      "history": true,
+      "remote": true
+    }
+  },
+  "breadcrumbs.symbolPath": "last",
+  "explorer.confirmDelete": false,
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 10,
+  "workbench.iconTheme": "vs-minimal",
+  "editor.fontSize": 13,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Alabaster",
+  "search.useGlobalIgnoreFiles": true,
+  "files.associations": {
+    "*Brewfile*": "ruby",
+    "Dockerfile.*": "dockerfile"
+  },
+  "rewrap.wholeComment": false,
+  "rewrap.autoWrap.enabled": false,
+  "rewrap.wrappingColumn": 90,
+  "codespaces.accountProvider": "GitHub",
+  "ruby.format": "rubocop",
+  "ruby.useLanguageServer": true,
+  "ruby.lint": {
+    "ruby": true,
+    "rubocop": true
+  },
+  "errorLens.followCursor": "activeLine",
+  "terminal.integrated.tabs.enabled": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.colorTheme": "Alabaster",
+}
