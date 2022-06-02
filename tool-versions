@@ -1,8 +1,4 @@
-golang 1.18
-postgres 11.5
-java adopt-openjdk-13.0.2+8
-nodejs 12.16.1
-python 3.8.2
-ruby 3.1.1
-rust stable
-yarn system
+golang 1.18.1
+nodejs 16.15.0
+postgres 14.2
+ruby 3.1.2
