@@ -1,7 +1,0 @@
-function ss {
-  if [ -x script/server ]; then
-    script/server $*
-  elif [ -x script/rails ]; then
-    script/rails server $*
-  fi
-}

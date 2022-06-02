@@ -1,3 +1,0 @@
-EXCLUDES="README.md LICENSE script/* _setup/* iterm2/*"
-DOTFILES_DIRS="$HOME/.dotfiles $HOME/.dotfiles-web-team"
-UNDOTTED="Library"
