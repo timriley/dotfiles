@@ -1,0 +1,18 @@
+[user]
+  name = Tim Riley
+  email = tim@riley.id.au
+[alias]
+  ap = add --patch
+  co = checkout
+[color]
+  ui = auto
+[push]
+  default = current
+[core]
+  editor = code -n -w
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[credential]
+  helper = osxkeychain
+[fetch]
+  prune = true
