@@ -1,7 +1,6 @@
 [user]
   name = Tim Riley
-  email = tim@openmonkey.com
-  signinkey = 82E88BC9
+  email = tim@riley.id.au
 
 [github]
   user = timriley
@@ -9,14 +8,8 @@
 [core]
   editor = code -n -w
 
-[commit]
-  gpgsign = true
-
 [credential]
   helper = osxkeychain
-
-[gpg]
-  program = /usr/local/bin/gpg
 
 [alias]
   create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
