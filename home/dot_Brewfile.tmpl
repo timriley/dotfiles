@@ -1,15 +1,13 @@
 {{- if (eq .chezmoi.os "darwin") -}}
-#!/bin/bash
 
-set -eufo pipefail
-
-{{ $taps := list
+{{- $taps := list
   "golangci/tap"
   "homebrew/cask"
   "homebrew/cask-fonts"
-  "homebrew/cask-versions" -}}
+  "homebrew/cask-versions"
+-}}
 
-{{ $brews := list
+{{- $brews := list
   "ack"
   "asdf"
   "cloc"
@@ -32,17 +30,19 @@ set -eufo pipefail
   "shellcheck"
   "tree"
   "wget"
-  "yarn" -}}
+  "yarn"
+-}}
 
 {{/* Dependencies for building postgres via asdf */}}
-{{ $brews = concat $brews (list
+{{- $brews = concat $brews (list
   "gcc"
   "readline"
   "zlib"
   "curl"
-  "ossp-uuid") -}}
+  "ossp-uuid")
+-}}
 
-{{ $casks := list
+{{- $casks := list
   "1password"
   "1password-cli"
   "aws-vault"
@@ -86,10 +86,15 @@ set -eufo pipefail
   "visual-studio-code"
   "vlc"
   "zoom"
-  "zulip" -}}
-{{/* Disabled casks for now: calibre */}}
+  "zulip"
+-}}
+{{/*
+  Disabled casks for now:
 
-{{ $apps := list
+  calibre
+*/}}
+
+{{- $apps := list
   "1password for Safari -> 1569813296"
   "Acorn 7 -> 1547371478"
   "AdGuard for Safari -> 1440147259"
@@ -114,21 +119,21 @@ set -eufo pipefail
   "The Unarchiver -> 425424353"
   "Tweetbot 3 for Twitter -> 1384080005"
   "xScope -> 447661441"
-  "Yoink -> 457622435" -}}
+  "Yoink -> 457622435"
+-}}
 
-brew bundle --no-lock --file=/dev/stdin <<EOF
 {{ range ($taps | sortAlpha | uniq) -}}
 tap "{{ . }}"
-{{ end -}}
+{{ end }}
 {{ range ($brews | sortAlpha | uniq) -}}
 brew "{{ . }}"
-{{ end -}}
+{{ end }}
 {{ range ($casks | sortAlpha | uniq) -}}
 cask "{{ . }}"
-{{ end -}}
+{{ end }}
 {{ range ($apps | sortAlpha | uniq) -}}
-{{ $app := split " -> " . -}}
+{{- $app := split " -> " . -}}
 mas "{{ $app._0 }}", id: {{ $app._1 }}
 {{ end -}}
-EOF
-{{ end -}}
+
+{{- end -}}
