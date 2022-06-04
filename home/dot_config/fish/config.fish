@@ -1,14 +1,22 @@
 # Turn off the default greeting
 set fish_greeting
 
-fish_add_path /opt/homebrew/bin
+# Homebrew
+eval (/opt/homebrew/bin/brew shellenv)
+if test -d (brew --prefix)"/share/fish/completions"
+  set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/completions
+end
+if test -d (brew --prefix)"/share/fish/vendor_completions.d"
+  set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+end
 
+# Direnv
 direnv hook fish | source
 
+# asdf
 source /opt/homebrew/opt/asdf/asdf.fish
 
-source ~/.secrets.fish
-
+# Editor
 set --export EDITOR "code"
 
 # Required for postgres to build, see https://github.com/smashedtoatoms/asdf-postgres/issues/52
