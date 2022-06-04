@@ -1,0 +1,7 @@
+zmodule completion
+zmodule environment
+zmodule input
+zmodule utility
+zmodule termtitle
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions

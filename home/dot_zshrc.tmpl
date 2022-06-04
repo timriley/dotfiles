@@ -1,0 +1,39 @@
+{{ if eq .chezmoi.os "darwin" -}}
+# Use Homebrew
+fpath+=("$(/opt/homebrew/bin/brew --prefix)/share/zsh/site-functions")
+eval "$(/opt/homebrew/bin/brew shellenv)"
+{{- end }}
+
+# Configure Zim modules
+zstyle ':zim:zmodule' use 'degit'
+zstyle ':zim:termtitle' format '%2~'
+
+# Use Zim to create a livable zsh environment
+ZIM_HOME=~/.zim
+# Download zimfw plugin manager if missing.
+if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
+  curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+fi
+# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated
+if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
+  source ${ZIM_HOME}/zimfw.zsh init -q
+fi
+# Go!
+source ${ZIM_HOME}/init.zsh
+
+# Set a simple prompt
+
+# Modify the prompt to contain git branch name if applicable
+git_prompt_info() {
+  current_branch=$(git symbolic-ref --short HEAD 2> /dev/null)
+  if [[ -n $current_branch ]]; then
+    echo " %{$fg_bold[green]%}$current_branch%{$reset_color%}"
+  fi
+}
+
+setopt PROMPT_SUBST
+
+# Allow exported PS1 variable to override default prompt.
+if ! env | grep -q '^PS1='; then
+  PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
+fi
