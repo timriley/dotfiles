@@ -23,7 +23,7 @@ source ${ZIM_HOME}/init.zsh
 
 # Set a simple prompt
 
-# Modify the prompt to contain git branch name if applicable
+# Detect git branch for displaying in prompt
 git_prompt_info() {
   current_branch=$(git symbolic-ref --short HEAD 2> /dev/null)
   if [[ -n $current_branch ]]; then
