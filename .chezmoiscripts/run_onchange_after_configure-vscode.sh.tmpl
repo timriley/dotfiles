@@ -32,6 +32,8 @@
 
 set -eufo pipefail
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 {{ range $extensions -}}
 code --force --install-extension {{ . }}
 {{ end -}}

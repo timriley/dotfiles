@@ -3,6 +3,7 @@
 
 set -eufo pipefail
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap homebrew/cask
 brew install 1password-cli
 {{ end -}}

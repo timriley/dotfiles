@@ -4,5 +4,6 @@
 # Ensure this script runs on .Brewfile changes by including a hash of its file contents:
 # ~/.Brewfile: {{ include (joinPath .chezmoi.homeDir ".Brewfile") | sha256sum }}
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle --no-lock --file ~/.Brewfile
 {{ end -}}
