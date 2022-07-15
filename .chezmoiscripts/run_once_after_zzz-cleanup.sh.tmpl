@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if command -v chezmoi > /dev/null 2>&1 && [ -f ~/bin/chezmoi ]; then
+  echo "===> Cleaning up bootstrap chezmoi install"
+  rm ~/bin/chezmoi
+  rmdir ~/bin 2>/dev/null || true
+fi
