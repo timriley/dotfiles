@@ -1,1 +1,3 @@
-{{- onepasswordDocument "SSH Key (Personal) - id_rsa" "Private" "my" -}}
+{{- if .personal -}}
+  {{- onepasswordDocument "SSH Key (Personal) - id_rsa" "Private" "my" -}}
+{{- end -}}
