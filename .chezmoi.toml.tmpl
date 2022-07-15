@@ -2,6 +2,7 @@
 {{- $ephemeral := false -}}{{/* true if this machine is ephemeral, e.g. a cloud or VM instance */}}
 {{- $headless := false -}}{{/* true if this machine does not have a screen and keyboard */}}
 {{- $personal := false -}}{{/* true if this is my personal machine */}}
+{{- $buildkite := false -}}{{/* true if this is my work machine */}}
 {{- "" -}}
 
 {{- $osID := .chezmoi.os -}}
@@ -21,6 +22,8 @@
 {{-   $computerName := output "scutil" "--get" "ComputerName" | trim -}}
 {{-   if eq $computerName "Tim’s MacBook Air" -}}
 {{-     $hostname = "tims-mba" -}}
+{{-   else if eq $computerName "Tim’s BuildBook Pro" -}}
+{{-     $hostname = "buildkite-mbp" -}}
 {{-   else -}}
 {{-     $hostname = $computerName -}}
 {{-   end -}}
@@ -29,6 +32,8 @@
 {{- if not $ephemeral -}}
 {{-   if eq $hostname "tims-mba" -}}
 {{-     $personal = true -}}
+{{-   else if eq $hostname "buildkite-mbp" -}}
+{{-     $buildkite = true -}}
 {{-   else if stdinIsATTY -}}
 {{-     if hasKey . "headless" -}}
 {{-       $headless = .headless -}}
@@ -47,8 +52,9 @@
 {{- end -}}
 
 [data]
-    ephemeral = {{ $ephemeral }}
-    headless = {{ $headless }}
-    hostname = {{ $hostname | quote }}
-    personal = {{ $personal }}
-    osid = {{ $osID | quote }}
+  ephemeral = {{ $ephemeral }}
+  headless = {{ $headless }}
+  hostname = {{ $hostname | quote }}
+  personal = {{ $personal }}
+  buildkite = {{ $buildkite }}
+  osid = {{ $osID | quote }}
