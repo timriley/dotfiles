@@ -1,0 +1,6 @@
+[".hammerspoon/Spoons/SpoonInstall.spoon"]
+  type = "archive"
+  url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip"
+  exact = true
+  stripComponents = 1
+  refreshPeriod = "744h"
