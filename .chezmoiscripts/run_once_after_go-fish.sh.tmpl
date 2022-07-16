@@ -2,8 +2,14 @@
 #!/bin/bash
 
 if [ -f /opt/homebrew/bin/fish ] && [ ! `grep /opt/homebrew/bin/fish /etc/shells` ]; then
+  echo "===> Adding fish to /etc/shells (will prompt for password)"
+
   sudo sh -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
 fi
 
-chsh -s /opt/homebrew/bin/fish
+if [ $SHELL != "/opt/homebrew/bin/fish" ]; then
+  echo "===> Setting default shell to fish (will prompt for password)"
+
+  chsh -s /opt/homebrew/bin/fish
+fi
 {{ end -}}

@@ -3,6 +3,8 @@
 
 # Install the Xcode Command Line Tools.
 if ! [ -f "/Library/Developer/CommandLineTools/usr/bin/git" ]; then
+  echo "===> Installing Xcode Command Line Tools"
+
   CLT_PACKAGE=$(softwareupdate --list \
     | grep -B 1 "Command Line Tools" \
     | awk -F"*" '/^ *\*/ {print $2}' \
@@ -14,7 +16,7 @@ if ! [ -f "/Library/Developer/CommandLineTools/usr/bin/git" ]; then
   xcode-select --install
 fi
 
-# Accept XCode T&Cs
+# Accept T&Cs
 if /usr/bin/xcrun clang 2>&1 | grep $Q license; then
   sudo xcodebuild -license
 fi
