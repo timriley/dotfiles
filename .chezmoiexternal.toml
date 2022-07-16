@@ -4,3 +4,8 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "744h"
+
+[".zim/zimfw.zsh"]
+  type = "file"
+  url = "https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh"
+  refreshPeriod = "744h"
