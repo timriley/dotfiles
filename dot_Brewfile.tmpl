@@ -49,7 +49,6 @@
   "1password"
   "1password-cli"
   "aws-vault"
-  "backblaze"
   "bartender"
   "bike"
   "caffeine"
@@ -93,11 +92,12 @@
   "zoom"
   "zulip"
 -}}
-{{/*
-  Disabled casks for now:
-
-  calibre
-*/}}
+{{ if .personal -}}
+{{- $casks = concat $casks (list
+  "backblaze"
+  "calibre")
+-}}
+{{ end -}}
 
 {{- $apps := list
   "1password for Safari -> 1569813296"
@@ -109,7 +109,6 @@
   "GoodLinks -> 1474335294"
   "Hush Nag Blocker -> 1544743900"
   "iA Writer -> 775737590"
-  "Kindle -> 405399194"
   "Keynote -> 409183694"
   "Marked 2 -> 890031187"
   "Numbers -> 409203825"
