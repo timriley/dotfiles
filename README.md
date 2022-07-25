@@ -17,3 +17,9 @@ Thank you to all of the following:
 - Thoughtbot for [their dotfiles](https://github.com/thoughtbot/dotfiles) and [rcm](https://github.com/thoughtbot/rcm)
 - Mike McQuaid for [his dotfiles](https://github.com/MikeMcQuaid/dotfiles)
 - Zach Holman for [his dotfiles](https://github.com/holman/dotfiles)
+
+
+
+Safari turn off "open 'safe' files after downloading"
+
+source diredctory and src symlink
