@@ -97,7 +97,7 @@
   },
   "rewrap.wholeComment": false,
   "rewrap.autoWrap.enabled": false,
-  "rewrap.wrappingColumn": 90,
+  "rewrap.wrappingColumn": 100,
   "codespaces.accountProvider": "GitHub",
   "ruby.format": "rubocop",
   "ruby.useLanguageServer": true,
