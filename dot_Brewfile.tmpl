@@ -99,6 +99,11 @@
   "calibre")
 -}}
 {{ end -}}
+{{ if .buildkite -}}
+{{- $casks = concat $casks (list
+  "google-chrome")
+-}}
+{{ end -}}
 
 {{- $apps := list
   "1password for Safari -> 1569813296"
