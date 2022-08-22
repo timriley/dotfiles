@@ -1,0 +1,20 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+set -eo pipefail
+
+duti -s com.microsoft.VSCode .css  all
+duti -s com.microsoft.VSCode .js   all
+duti -s com.microsoft.VSCode .json all
+duti -s com.microsoft.VSCode .jsx  all
+duti -s com.microsoft.VSCode .md   all
+duti -s com.microsoft.VSCode .rb   all
+duti -s com.microsoft.VSCode .sh   all
+duti -s com.microsoft.VSCode .toml all
+duti -s com.microsoft.VSCode .ts   all
+duti -s com.microsoft.VSCode .tsx  all
+duti -s com.microsoft.VSCode .txt  all
+duti -s com.microsoft.VSCode .xml  all
+duti -s com.microsoft.VSCode .yaml all
+duti -s com.microsoft.VSCode .yml  all
+{{ end -}}
