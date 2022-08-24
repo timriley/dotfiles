@@ -35,7 +35,6 @@
   "wget"
   "yarn"
 -}}
-
 {{/* Dependencies for building postgres via asdf */}}
 {{- $brews = concat $brews (list
   "gcc"
@@ -44,6 +43,11 @@
   "curl"
   "ossp-uuid")
 -}}
+{{ if .buildkite -}}
+{{- $brews = concat $brews (list
+  "buildkite/buildkite/buildkite-agent")
+-}}
+{{ end -}}
 
 {{/* Re: dockutil, see https://github.com/kcrawford/dockutil/issues/127#issuecomment-1118733013 */}}
 
@@ -107,7 +111,9 @@
 {{ end -}}
 {{ if .buildkite -}}
 {{- $casks = concat $casks (list
-  "google-chrome")
+  "google-chrome"
+  "ngrok"
+)
 -}}
 {{ end -}}
 
