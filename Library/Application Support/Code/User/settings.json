@@ -100,7 +100,6 @@
   "rewrap.wrappingColumn": 100,
   "codespaces.accountProvider": "GitHub",
   "ruby.format": "rubocop",
-  "ruby.useLanguageServer": true,
   "ruby.lint": {
     "ruby": true,
     "rubocop": true
@@ -120,4 +119,5 @@
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "go.toolsManagement.autoUpdate": true,
   "workbench.colorTheme": "Alabaster",
+  "editor.experimental.stickyScroll.enabled": true
 }
