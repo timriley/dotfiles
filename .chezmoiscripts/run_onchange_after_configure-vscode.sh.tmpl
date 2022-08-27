@@ -1,4 +1,4 @@
-{{ if and (eq .chezmoi.os "darwin" "linux") (not .headless) -}}
+{{ if eq .chezmoi.os "darwin" "linux" -}}
 
 {{ $extensions := list
   "brandoncc.vscode-seeing-is-believing"
