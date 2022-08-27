@@ -2,6 +2,12 @@
   name = Tim Riley
   email = {{ .email }}
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJVeJ3lQW5izwzDWUCoZMlnDTv9FahsJoHVlpQvpqxZe
+{{ if .buildkite -}}
+[includeIf "gitdir:~/Source/buildkite/"]
+  path = config-buildkite
+[includeIf "gitdir:~/src/buildkite/"]
+  path = config-buildkite
+{{- end -}}
 [core]
   editor = code -n -w
   excludesfile = ~/.config/git/ignore
