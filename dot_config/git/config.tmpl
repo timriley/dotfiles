@@ -2,25 +2,28 @@
   name = Tim Riley
   email = tim@riley.id.au
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJVeJ3lQW5izwzDWUCoZMlnDTv9FahsJoHVlpQvpqxZe
-[commit]
-  gpgsign = true
+[core]
+  editor = code -n -w
+  excludesfile = ~/.config/git/ignore
+  autocrlf = input
+[color]
+  ui = auto
+[credential]
+  helper = osxkeychain
 [gpg]
   format = ssh
 [gpg "ssh"]
   # See https://1password.community/discussion/131318/ssh-commit-signing
   program = {{ .chezmoi.homeDir }}/.config/git/gpg-ssh-program
+[commit]
+  gpgsign = true
+[push]
+  default = current
+  autoSetupRemote = true
+[remote]
+  pushDefault = origin
+[fetch]
+  prune = true
 [alias]
   ap = add --patch
   co = checkout
-[color]
-  ui = auto
-[push]
-  default = current
-[core]
-  editor = code -n -w
-  excludesfile = ~/.config/git/ignore
-  autocrlf = input
-[credential]
-  helper = osxkeychain
-[fetch]
-  prune = true
