@@ -21,6 +21,8 @@
 [gpg "ssh"]
   # See https://1password.community/discussion/131318/ssh-commit-signing
   program = {{ .chezmoi.homeDir }}/.config/git/gpg-ssh-program
+[init]
+  defaultBranch = main
 [commit]
   gpgsign = true
 [push]
