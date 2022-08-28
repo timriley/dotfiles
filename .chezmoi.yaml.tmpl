@@ -1,7 +1,6 @@
 {{/* boolean feature tags */}}
 {{- $personal := false -}}{{/* true if this is my personal machine */}}
 {{- $buildkite := false -}}{{/* true if this is my work machine */}}
-{{- "" -}}
 
 {{- $email := promptString "Personal email" -}}
 {{- $buildkiteEmail := "" -}}
@@ -23,14 +22,14 @@
 {{-   $personal = true -}}
 {{- else if eq $hostname "buildkite-mbp" -}}
 {{-   $buildkite = true -}}
-{{-   $buildkiteEmail := promptString "Buildkite email" -}}
+{{-   $buildkiteEmail = promptString "Buildkite email" -}}
 {{- end -}}
 
-[data]
-  hostname = {{ $hostname | quote }}
-  personal = {{ $personal }}
-  email = {{ $email | quote }}
-  buildkite = {{ $buildkite }}
-  {{- if $buildkite -}}
-  buildkiteEmail = {{ $buildkiteEmail | quote }}
-  {{- end -}}
+data:
+  hostname: {{ $hostname | quote }}
+  personal: {{ $personal }}
+  email: {{ $email | quote }}
+  buildkite: {{ $buildkite }}
+{{- if $buildkite }}
+  buildkite_email: {{ $buildkiteEmail | quote }}
+{{- end -}}
