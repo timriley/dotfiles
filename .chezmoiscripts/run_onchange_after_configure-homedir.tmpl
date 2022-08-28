@@ -1,0 +1,9 @@
+{{ if (eq .chezmoi.os "darwin") -}}
+#!/bin/bash
+
+set -eufo pipefail
+
+mkdir -p ~/Source
+ln -sf ~/Source ~/src
+chflags -h hidden ~/src
+{{ end -}}
