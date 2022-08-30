@@ -119,5 +119,9 @@
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "go.toolsManagement.autoUpdate": true,
   "workbench.colorTheme": "Alabaster",
-  "editor.experimental.stickyScroll.enabled": true
+  "editor.experimental.stickyScroll.enabled": true,
+  "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 100
+  },
 }
