@@ -124,4 +124,7 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 100
   },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }
