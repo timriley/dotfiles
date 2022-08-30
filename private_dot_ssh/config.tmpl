@@ -1,0 +1,6 @@
+Host *
+  IdentityAgent ~/.1password/agent.sock
+
+{{ if .buildkite -}}
+  {{- (index (onepassword "dotfiles: .ssh/config" "Private" "buildkite").fields 0).value }}
+{{- end -}}
