@@ -81,9 +81,6 @@
   },
   "breadcrumbs.symbolPath": "last",
   "explorer.confirmDelete": false,
-  "[json]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 10,
   "workbench.iconTheme": "vs-minimal",
@@ -120,11 +117,14 @@
   "go.toolsManagement.autoUpdate": true,
   "workbench.colorTheme": "Alabaster",
   "editor.experimental.stickyScroll.enabled": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
   "[markdown]": {
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 100
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }
