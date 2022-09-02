@@ -12,6 +12,7 @@
   editor = code -n -w
   excludesfile = ~/.config/git/ignore
   autocrlf = input
+  attributesfile = ~/.config/git/attributes
 [color]
   ui = auto
 [credential]
@@ -32,6 +33,9 @@
   pushDefault = origin
 [fetch]
   prune = true
+[merge "merge-structure-sql"]
+  name = Rails structure.sql merge driver
+  driver = git-merge-structure-sql %A %O %B
 [alias]
   ap = add --patch
   co = checkout

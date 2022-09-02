@@ -1,5 +1,6 @@
 bundler
 gem-release
+git-merge-structure-sql
 solargraph
 standard
 webrick
