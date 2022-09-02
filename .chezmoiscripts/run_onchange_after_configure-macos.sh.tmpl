@@ -3,11 +3,13 @@
 
 set -eufo pipefail
 
+# Configure Dock
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock show-process-indicators -bool false
 defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock orientation left
 
+# Set Dock contents
 dockutil --remove all
 dockutil --add /Applications/Safari.app
 dockutil --add ~/Downloads --display stack
