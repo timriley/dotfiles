@@ -116,7 +116,6 @@
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "go.toolsManagement.autoUpdate": true,
   "workbench.colorTheme": "Alabaster",
-  "editor.experimental.stickyScroll.enabled": true,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -126,5 +125,6 @@
   "[markdown]": {
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 100
-  }
+  },
+  "editor.stickyScroll.enabled": true,
 }
