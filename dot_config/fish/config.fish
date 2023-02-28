@@ -13,8 +13,8 @@ end
 # Direnv
 direnv hook fish | source
 
-# asdf
-source /opt/homebrew/opt/asdf/asdf.fish
+# rtx
+rtx activate fish | source
 
 # Editor
 set --export EDITOR "code"
