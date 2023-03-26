@@ -1,0 +1,3 @@
+{{ if .buildkite -}}
+  {{- (onepasswordDetailsFields "Buildkite mac SSH key" "Private" "buildkite").public_key.value }}
+{{- end -}}
