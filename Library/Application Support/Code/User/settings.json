@@ -127,4 +127,7 @@
     "editor.wordWrapColumn": 100
   },
   "editor.stickyScroll.enabled": true,
+  "javascript.validate.enable": false,
+  "githubPullRequests.pullBranch": "never",
+  "workbench.fontAliasing": "auto",
 }
