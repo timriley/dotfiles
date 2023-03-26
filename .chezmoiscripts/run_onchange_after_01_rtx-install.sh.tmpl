@@ -1,11 +1,10 @@
-{{- if glob (joinPath .chezmoi.homeDir ".Brewfile") -}}
+{{- if glob (joinPath .chezmoi.homeDir ".tool-versions") -}}
 #!/bin/bash
 
 # Ensure this script runs on .tool-versions changes by including a hash of its file contents:
 # ~/.tool-versions: {{ include (joinPath .chezmoi.homeDir ".tool-versions") | sha256sum }}
 
-source /opt/homebrew/opt/asdf/asdf.sh
-
-# cd ~
-# asdf install
+eval "$(rtx activate bash)"
+cd ~
+rtx install
 {{ end -}}
