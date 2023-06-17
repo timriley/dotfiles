@@ -44,6 +44,12 @@
   "curl"
   "ossp-uuid")
 -}}
+{{ if .personal -}}
+{{- $brews = concat $brews (list
+  "yt-dlp"
+)
+-}}
+{{ end -}}
 {{ if .buildkite -}}
 {{- $brews = concat $brews (list
   "buildkite/buildkite/buildkite-agent")
