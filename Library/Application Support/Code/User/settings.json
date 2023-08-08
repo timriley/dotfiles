@@ -84,7 +84,7 @@
   "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 10,
   "workbench.iconTheme": "vs-minimal",
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "Alabaster",
   "search.useGlobalIgnoreFiles": true,
@@ -101,26 +101,12 @@
     "ruby": true,
     "rubocop": true
   },
-  "errorLens.followCursor": "activeLine",
   "terminal.integrated.tabs.enabled": true,
   "workbench.editor.untitled.hint": "hidden",
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
-  ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "go.toolsManagement.autoUpdate": true,
   "workbench.colorTheme": "Alabaster",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
   },
   "[markdown]": {
     "editor.wordWrap": "bounded",
