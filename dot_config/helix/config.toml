@@ -1,0 +1,18 @@
+theme = "onelight"
+
+[editor]
+bufferline = "always"
+rulers = [100]
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+display-messages = true
