@@ -19,6 +19,9 @@ rtx activate fish | source
 # Editor
 set --export EDITOR "code"
 
+# For CLI apps like lazygit to keep their configs here instead of ~/Library
+set --export XDG_CONFIG_HOME "$HOME/.config"
+
 # Required for postgres to build, see https://github.com/smashedtoatoms/asdf-postgres/issues/52
 set --export HOMEBREW_PREFIX "/opt/homebrew"
 
