@@ -1350,7 +1350,7 @@
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
-			<false/>
+			<integer>2</integer>
 			<key>Right Option Key Changeable</key>
 			<true/>
 			<key>Right Option Key Sends</key>
