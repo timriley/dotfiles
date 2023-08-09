@@ -4,16 +4,11 @@
 --- as the `escape` key. If the `control` key is held down and used in
 --- combination with another key, then provide the normal `control` key
 --- behavior.
+---
+--- From https://github.com/jasonrudolph/ControlEscape.spoon
 
 local obj={}
 obj.__index = obj
-
--- Metadata
-obj.name = 'ControlEscape'
-obj.version = '0.1'
-obj.author = 'Jason Rudolph <jason@jasonrudolph.com>'
-obj.homepage = 'https://github.com/jasonrudolph/ControlEscape.spoon'
-obj.license = 'MIT - https://opensource.org/licenses/MIT'
 
 function obj:init()
   self.sendEscape = false
