@@ -1,6 +1,7 @@
 theme = "onelight"
 
 [editor]
+auto-save = true
 bufferline = "always"
 rulers = [100]
 
@@ -16,3 +17,16 @@ render = true
 
 [editor.lsp]
 display-messages = true
+
+[keys.normal]
+# Move lines up or down, from https://github.com/helix-editor/helix/issues/2245#issuecomment-1299325736
+C-A-j = ['ensure_selections_forward', 'extend_to_line_bounds', 'extend_char_right', 'extend_char_left', 'delete_selection', 'add_newline_below', 'move_line_down', 'replace_with_yanked']
+C-A-k = ['ensure_selections_forward', 'extend_to_line_bounds', 'extend_char_right', 'extend_char_left', 'delete_selection', 'move_line_up', 'add_newline_above', 'move_line_up', 'replace_with_yanked']
+
+[keys.insert]
+# Create a new line from anywhere in the current line; https://github.com/helix-editor/helix/discussions/4006#discussioncomment-3754990
+"A-ret" = "open_below"
+
+# Simple word-wise navigation
+C-left = [ "move_prev_long_word_start", "move_char_left", "move_char_right" ]
+C-right = [ "move_next_long_word_start", "move_char_left", "move_char_right" ]
