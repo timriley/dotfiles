@@ -46,11 +46,6 @@
     "when": "editorFocus"
   },
   {
-    "key": "cmd+j",
-    "command": "workbench.action.focusPanel",
-    "when": "!panelFocus"
-  },
-  {
     "key": "cmd+alt+j",
     "command": "workbench.action.closePanel"
   },
@@ -71,16 +66,6 @@
   //   "command": "workbench.action.nextPanelView",
   //   "when": "panelFocus"
   // },
-  {
-    "key": "cmd+shift+j",
-    "command": "workbench.action.focusPanel",
-    "when": "!panelFocus"
-  },
-  {
-    "key": "cmd+shift+j",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "panelFocus"
-  },
   {
     "key": "cmd+shift+e",
     "command": "workbench.action.focusActiveEditorGroup",
