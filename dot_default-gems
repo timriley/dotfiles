@@ -1,4 +1,5 @@
 bundler
+debug
 gem-release
 git-merge-structure-sql
 solargraph
