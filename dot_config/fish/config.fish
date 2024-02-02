@@ -30,6 +30,8 @@ set --export HOMEBREW_NO_AUTO_UPDATE "1"
 
 # Default extra options for mise postgres installations
 set --export POSTGRES_EXTRA_CONFIGURE_OPTIONS "--with-uuid=e2fs"
+set --export ICU_CFLAGS "-I$(brew --prefix icu4c)/include"
+set --export ICU_LIBS "-L$(brew --prefix icu4c)/lib -licui18n -licuuc -licudata"
 
 function fish_user_key_bindings
   # Thanks, https://github.com/fish-shell/fish-shell/issues/905#issuecomment-20559486
