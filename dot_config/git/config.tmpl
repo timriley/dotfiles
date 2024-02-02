@@ -24,6 +24,8 @@
   program = {{ .chezmoi.homeDir }}/.config/git/gpg-ssh-program
 [init]
   defaultBranch = main
+[branch]
+  sort = -committerdate
 [commit]
   gpgsign = true
 [push]
