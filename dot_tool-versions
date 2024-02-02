@@ -1,4 +1,4 @@
 golang 1.20.1
 nodejs 18.14.2
-postgres 14.2
+postgres 16.1
 ruby 3.3.0
