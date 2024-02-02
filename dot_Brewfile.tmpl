@@ -26,6 +26,7 @@
   "imagemagick"
   "jq"
   "libdvdcss"
+  "mise"
   "moreutils"
   "overmind"
   "p7zip"
@@ -33,13 +34,12 @@
   "pspg"
   "lazygit"
   "lf"
-  "rtx"
   "shellcheck"
   "tree"
   "wget"
   "yarn"
 -}}
-{{/* Dependencies for building postgres via rtx */}}
+{{/* Dependencies for building postgres via mise */}}
 {{- $brews = concat $brews (list
   "gcc"
   "readline"

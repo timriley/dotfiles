@@ -13,8 +13,8 @@ end
 # Direnv
 direnv hook fish | source
 
-# rtx
-rtx activate fish | source
+# mise
+mise activate fish | source
 
 # Editor
 set --export EDITOR "code"
@@ -28,7 +28,7 @@ set --export HOMEBREW_PREFIX "/opt/homebrew"
 set --export HOMEBREW_CASK_OPTS "--appdir=/Applications"
 set --export HOMEBREW_NO_AUTO_UPDATE "1"
 
-# Default extra options for rtx postgres installations
+# Default extra options for mise postgres installations
 set --export POSTGRES_EXTRA_CONFIGURE_OPTIONS "--with-uuid=e2fs"
 
 function fish_user_key_bindings

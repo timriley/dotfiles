@@ -4,8 +4,8 @@ fpath+=("$(/opt/homebrew/bin/brew --prefix)/share/zsh/site-functions")
 eval "$(/opt/homebrew/bin/brew shellenv)"
 {{- end }}
 
-# Use rtx
-eval "$(rtx activate zsh)"
+# Use mise
+eval "$(mise activate zsh)"
 
 # Configure Zim modules
 zstyle ':zim:zmodule' use 'degit'
