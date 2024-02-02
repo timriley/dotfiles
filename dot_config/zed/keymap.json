@@ -1,0 +1,16 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // Disable right dock toggling (which right now is for the AI assistant only)
+      // FIXME: this doesn't actually work
+      "cmd-r": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  }
+]

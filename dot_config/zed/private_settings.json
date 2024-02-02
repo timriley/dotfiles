@@ -1,0 +1,36 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Ayu Light",
+  "ui_font_family": "JetBrains Mono NL",
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "buffer_font_family": "JetBrains Mono NL",
+  "tab_size": 2,
+  "languages": {
+    "Ruby": {
+      "tab_size": 2
+    }
+  },
+
+  // Disable features
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "assistant": {
+    "button": false
+  }
+}
