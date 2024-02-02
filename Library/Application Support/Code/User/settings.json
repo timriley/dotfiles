@@ -102,9 +102,7 @@
     "rubocop": true
   },
   "terminal.integrated.tabs.enabled": true,
-  "workbench.editor.untitled.hint": "hidden",
   "go.toolsManagement.autoUpdate": true,
-  "workbench.colorTheme": "Alabaster",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -116,4 +114,16 @@
   "javascript.validate.enable": false,
   "githubPullRequests.pullBranch": "never",
   "workbench.fontAliasing": "auto",
+  "rubyLsp.rubyVersionManager": "custom",
+  "rubyLsp.customRubyCommand": "eval \"$(mise env -s fish)\"",
+  "githubPullRequests.commentExpandState": "collapseAll",
+  "workbench.editor.empty.hint": "hidden",
+  "rubyLsp.enableExperimentalFeatures": false,
+  "terminal.integrated.fontSize": 15,
+  "rubyLsp.formatter": "rubocop",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.colorTheme": "Alabaster",
 }
