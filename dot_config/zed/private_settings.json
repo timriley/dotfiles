@@ -9,20 +9,27 @@
 {
   "theme": "Ayu Light",
   "ui_font_family": "JetBrains Mono NL",
-  "ui_font_size": 16,
+  "ui_font_size": 15,
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrains Mono NL",
+  "project_panel": {
+    "folder_icons": false,
+    "file_icons": false
+  },
   "tab_size": 2,
+  "wrap_guides": [100],
   "languages": {
     "Ruby": {
       "tab_size": 2
     }
   },
-
   // Disable features
   "telemetry": {
     "diagnostics": false,
     "metrics": false
+  },
+  "features": {
+    "copilot": false
   },
   "collaboration_panel": {
     "button": false

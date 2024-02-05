@@ -4,13 +4,21 @@
     "bindings": {
       // Disable right dock toggling (which right now is for the AI assistant only)
       // FIXME: this doesn't actually work
-      "cmd-r": null
+      "cmd-r": null,
+      // The default "ctrl+`" shortcut for this is so hard to reach
+      "cmd-j": "terminal_panel::ToggleFocus",
+      "cmd-;": "workspace::ToggleBottomDock"
     }
   },
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-enter": null
+      "ctrl-enter": null,
+      // Subword navigation
+      "ctrl-left": "editor::MoveToPreviousSubwordStart",
+      "ctrl-right": "editor::MoveToNextSubwordEnd",
+      "ctrl-shift-left": "editor::SelectToPreviousSubwordStart",
+      "ctrl-shift-right": "editor::SelectToNextSubwordEnd"
     }
   }
 ]
