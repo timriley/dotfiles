@@ -17,7 +17,7 @@ direnv hook fish | source
 mise activate fish | source
 
 # Editor
-set --export EDITOR "code"
+set --export EDITOR "zed"
 
 # For CLI apps like lazygit to keep their configs here instead of ~/Library
 set --export XDG_CONFIG_HOME "$HOME/.config"
