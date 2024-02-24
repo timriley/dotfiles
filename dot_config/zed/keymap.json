@@ -7,7 +7,8 @@
       "cmd-r": null,
       // The default "ctrl+`" shortcut for this is so hard to reach
       "cmd-j": "terminal_panel::ToggleFocus",
-      "cmd-;": "workspace::ToggleBottomDock"
+      "cmd-;": "workspace::ToggleBottomDock",
+      "cmd-alt-c": "editor::CopyRelativePath"
     }
   },
   {

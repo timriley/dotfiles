@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Ayu Light",
+  "theme": "One Light",
   "ui_font_family": "JetBrains Mono NL",
   "ui_font_size": 15,
   "buffer_font_size": 14,
@@ -17,11 +17,18 @@
     "file_icons": false
   },
   "tab_size": 2,
-  "wrap_guides": [100],
   "languages": {
+    "Markdown": {
+      "soft_wrap": "preferred_line_length",
+      "preferred_line_length": 120
+    },
     "Ruby": {
-      "tab_size": 2
+      "tab_size": 2,
+      "wrap_guides": [100]
     }
+  },
+  "terminal": {
+    "blinking": "off"
   },
   // Disable features
   "telemetry": {
