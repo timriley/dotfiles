@@ -7,7 +7,7 @@
       "cmd-r": null,
       // The default "ctrl+`" shortcut for this is so hard to reach
       "cmd-j": "terminal_panel::ToggleFocus",
-      "cmd-;": "workspace::ToggleBottomDock",
+      "cmd-;": "workspace::ToggleRightDock",
       "cmd-alt-c": "editor::CopyRelativePath"
     }
   },
@@ -15,11 +15,16 @@
     "context": "Editor",
     "bindings": {
       "ctrl-enter": null,
-      // Subword navigation
+      // Allow toggling of dock from editor (overrideing ToggleLineNumbers, which I don't use)
+      "cmd-;": "workspace::ToggleRightDock",
+      // Subword navigation and selection
       "ctrl-left": "editor::MoveToPreviousSubwordStart",
       "ctrl-right": "editor::MoveToNextSubwordEnd",
       "ctrl-shift-left": "editor::SelectToPreviousSubwordStart",
-      "ctrl-shift-right": "editor::SelectToNextSubwordEnd"
+      "ctrl-shift-right": "editor::SelectToNextSubwordEnd",
+      // These are ctrl-shift by default, but I've taken those for subword selection
+      "cmd-alt-shift-right": "editor::SelectLargerSyntaxNode",
+      "cmd-alt-shift-left": "editor::SelectSmallerSyntaxNode"
     }
   }
 ]

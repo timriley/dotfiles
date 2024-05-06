@@ -7,16 +7,26 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "One Light",
+  "theme": {
+    "light": "Catppuccin Latte - No Italics",
+    "dark": "Catppuccin Mocha - No Italics"
+  },
   "ui_font_family": "JetBrains Mono NL",
   "ui_font_size": 15,
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrains Mono NL",
   "project_panel": {
     "folder_icons": false,
-    "file_icons": false
+    "file_icons": false,
+    "indent_size": 10
   },
   "tab_size": 2,
+  "double_click_in_multibuffer": "open",
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
   "languages": {
     "Markdown": {
       "soft_wrap": "preferred_line_length",
@@ -28,7 +38,8 @@
     }
   },
   "terminal": {
-    "blinking": "off"
+    "blinking": "off",
+    "dock": "right"
   },
   // Disable features
   "telemetry": {
@@ -45,6 +56,7 @@
     "button": false
   },
   "assistant": {
-    "button": false
+    "enabled": false,
+    "version": "1"
   }
 }
