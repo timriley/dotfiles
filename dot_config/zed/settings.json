@@ -22,11 +22,6 @@
   },
   "tab_size": 2,
   "double_click_in_multibuffer": "open",
-  "git": {
-    "inline_blame": {
-      "enabled": false
-    }
-  },
   "languages": {
     "Markdown": {
       "soft_wrap": "preferred_line_length",
@@ -39,7 +34,7 @@
   },
   "terminal": {
     "blinking": "off",
-    "dock": "right"
+    "dock": "bottom"
   },
   // Disable features
   "telemetry": {
@@ -47,7 +42,8 @@
     "metrics": false
   },
   "features": {
-    "copilot": false
+    "copilot": false,
+    "inline_completion_provider": "none"
   },
   "collaboration_panel": {
     "button": false
@@ -57,6 +53,10 @@
   },
   "assistant": {
     "enabled": false,
-    "version": "1"
+    "version": "1",
+    "button": false
+  },
+  "assistant_v2": {
+    "enabled": false
   }
 }

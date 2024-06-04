@@ -3,11 +3,14 @@
     "context": "Workspace",
     "bindings": {
       // Disable right dock toggling (which right now is for the AI assistant only)
-      // FIXME: this doesn't actually work
-      "cmd-r": null,
+      // This didn't work when I set it to `null`, so I'm setting it as an additional
+      // terminal_panel::ToggleFocus for now.
+      "cmd-r": "terminal_panel::ToggleFocus",
       // The default "ctrl+`" shortcut for this is so hard to reach
+      // "cmd-j": "terminal_panel::ToggleFocus",
+      // "cmd-j": ["editor::CopyRelativePath", "terminal_panel::ToggleFocus"],
       "cmd-j": "terminal_panel::ToggleFocus",
-      "cmd-;": "workspace::ToggleRightDock",
+      "cmd-;": "workspace::ToggleBottomDock",
       "cmd-alt-c": "editor::CopyRelativePath"
     }
   },
@@ -16,7 +19,7 @@
     "bindings": {
       "ctrl-enter": null,
       // Allow toggling of dock from editor (overrideing ToggleLineNumbers, which I don't use)
-      "cmd-;": "workspace::ToggleRightDock",
+      "cmd-;": "workspace::ToggleBottomDock",
       // Subword navigation and selection
       "ctrl-left": "editor::MoveToPreviousSubwordStart",
       "ctrl-right": "editor::MoveToNextSubwordEnd",
@@ -25,6 +28,12 @@
       // These are ctrl-shift by default, but I've taken those for subword selection
       "cmd-alt-shift-right": "editor::SelectLargerSyntaxNode",
       "cmd-alt-shift-left": "editor::SelectSmallerSyntaxNode"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-n": "workspace::NewTerminal"
     }
   }
 ]
