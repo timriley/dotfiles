@@ -11,7 +11,8 @@
       // "cmd-j": ["editor::CopyRelativePath", "terminal_panel::ToggleFocus"],
       "cmd-j": "terminal_panel::ToggleFocus",
       "cmd-;": "workspace::ToggleBottomDock",
-      "cmd-alt-c": "editor::CopyRelativePath"
+      "cmd-alt-c": "editor::CopyRelativePath",
+      "cmd-k enter": "pane::TogglePreviewTab"
     }
   },
   {
