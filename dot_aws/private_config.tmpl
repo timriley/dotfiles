@@ -1,0 +1,3 @@
+{{ if .buildkite -}}
+  {{- (index (onepassword "dotfiles: .aws/config" "Private" "buildkite").fields 0).value }}
+{{- end -}}

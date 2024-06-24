@@ -55,14 +55,16 @@
 {{ end -}}
 {{ if .buildkite -}}
 {{- $brews = concat $brews (list
-  "buildkite/buildkite/buildkite-agent")
+  "awscli"
+  "buildkite/buildkite/buildkite-agent"
+  "buildkite/developer-versions/bik"
+)
 -}}
 {{ end -}}
 
 {{- $casks := list
   "1password"
   "1password-cli"
-  "aws-vault"
   "bike"
   "caffeine"
   "dash"
@@ -122,6 +124,7 @@
 {{ end -}}
 {{ if .buildkite -}}
 {{- $casks = concat $casks (list
+  "aws-vault"
   "google-chrome"
   "loom"
   "mimestream"
