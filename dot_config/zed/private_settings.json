@@ -11,6 +11,12 @@
     "light": "Catppuccin Latte - No Italics",
     "dark": "Catppuccin Mocha - No Italics"
   },
+  "experimental.theme_overrides": {
+    // https://github.com/zed-industries/zed/issues/15383
+    // https://github.com/catppuccin/zed/pull/28
+    // Should be fixed by catpuccin theme extension v0.2.10 (which I can't install yet)
+    "background.appearance": "opaque"
+  },
   "ui_font_family": "JetBrains Mono NL",
   "ui_font_size": 15,
   "buffer_font_size": 14,
@@ -18,10 +24,15 @@
   "project_panel": {
     "folder_icons": false,
     "file_icons": false,
-    "indent_size": 10
+    "indent_size": 10,
+    "auto_fold_dirs": true
   },
-  "tab_size": 2,
+  "terminal": {
+    "blinking": "off",
+    "dock": "bottom"
+  },
   "double_click_in_multibuffer": "open",
+  "tab_size": 2,
   "languages": {
     "Markdown": {
       "soft_wrap": "preferred_line_length",
@@ -29,12 +40,20 @@
     },
     "Ruby": {
       "tab_size": 2,
-      "wrap_guides": [100]
+      "wrap_guides": [100],
+      "language_servers": ["ruby-lsp", "!solargraph"]
     }
   },
-  "terminal": {
-    "blinking": "off",
-    "dock": "bottom"
+  "lsp": {
+    "ruby-lsp": {
+      "enabledFeatures": {
+        "diagnostics": false
+      },
+      "initialization_options": {
+        "diagnostics": true,
+        "formatting": true
+      }
+    }
   },
   // Disable features
   "telemetry": {
@@ -53,7 +72,7 @@
   },
   "assistant": {
     "enabled": false,
-    "version": "1",
+    "version": "2",
     "button": false
   },
   "assistant_v2": {

@@ -19,6 +19,8 @@
     "context": "Editor",
     "bindings": {
       "ctrl-enter": null,
+      // This used to be the default, but stopped working with Zed 0.146.3...
+      "cmd-enter": "editor::NewlineBelow",
       // Allow toggling of dock from editor (overrideing ToggleLineNumbers, which I don't use)
       "cmd-;": "workspace::ToggleBottomDock",
       // Subword navigation and selection
