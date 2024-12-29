@@ -1,61 +1,55 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run the `open default settings` command
-// from the command palette or from `Zed` application menu.
+// Zed settings. See https://zed.dev/docs/configuring-zed.
+
 {
+  // Editor settings
+
+  // I run in light mode 90% of the time. Catppuccin is nice for both modes.
   "theme": {
     "light": "Catppuccin Latte - No Italics",
     "dark": "Catppuccin Mocha - No Italics"
   },
-  "experimental.theme_overrides": {
-    // https://github.com/zed-industries/zed/issues/15383
-    // https://github.com/catppuccin/zed/pull/28
-    // Should be fixed by catpuccin theme extension v0.2.10 (which I can't install yet)
-    "background.appearance": "opaque"
-  },
+
+  // I prefer simple text, none of these fancy code ligatures.
   "ui_font_family": "JetBrains Mono NL",
   "ui_font_size": 15,
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrains Mono NL",
+
+  // Keep my project panel simple.
   "project_panel": {
     "folder_icons": false,
     "file_icons": false,
-    "indent_size": 10,
-    "auto_fold_dirs": true
+    "indent_size": 10, // Slightly less than default, for more compact nesting.
+    "auto_fold_dirs": true,
+    "indent_guides": {
+      "show": "never"
+    }
   },
   "terminal": {
-    "blinking": "off",
-    "dock": "bottom"
+    "blinking": "off" // Make the terminal match my Mac terminal.
   },
+  // I tend to use the multi-buffer to jump directly to the relevant files.
   "double_click_in_multibuffer": "open",
+
+  // Language settings
+
   "tab_size": 2,
   "languages": {
     "Markdown": {
       "soft_wrap": "preferred_line_length",
-      "preferred_line_length": 120
+      "preferred_line_length": 100
     },
     "Ruby": {
       "tab_size": 2,
       "wrap_guides": [100],
-      "language_servers": ["ruby-lsp", "!solargraph"]
+      // Use ruby-lsp, not the Ruby extension's default of solargraph.
+      "language_servers": ["ruby-lsp", "!solargraph"],
+      "use_on_type_format": false // see https://github.com/zed-industries/zed/issues/16617
     }
   },
-  "lsp": {
-    "ruby-lsp": {
-      "enabledFeatures": {
-        "diagnostics": false
-      },
-      "initialization_options": {
-        "diagnostics": true,
-        "formatting": true
-      }
-    }
-  },
-  // Disable features
+
+  // Disable features (No telemetry, no AI anywhere).
+
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -68,7 +62,8 @@
     "button": false
   },
   "chat_panel": {
-    "button": false
+    "button": false,
+    "dock": "left"
   },
   "assistant": {
     "enabled": false,

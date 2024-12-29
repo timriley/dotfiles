@@ -2,16 +2,16 @@
   {
     "context": "Workspace",
     "bindings": {
-      // Disable right dock toggling (which right now is for the AI assistant only)
-      // This didn't work when I set it to `null`, so I'm setting it as an additional
-      // terminal_panel::ToggleFocus for now.
-      "cmd-r": "terminal_panel::ToggleFocus",
-      // The default "ctrl+`" shortcut for this is so hard to reach
-      // "cmd-j": "terminal_panel::ToggleFocus",
-      // "cmd-j": ["editor::CopyRelativePath", "terminal_panel::ToggleFocus"],
+      // Always open a new window when switching recent projects.
+      "cmd-alt-o": ["projects::OpenRecent", { "create_new_window": true }],
+      // Disable right dock toggling (which contains the AI assistant only).
+      "cmd-r": null,
+      // Focus the terminal with a much easier shortcut than the default "ctrl+`".
       "cmd-j": "terminal_panel::ToggleFocus",
+      // Allow easy showing/hiding of the terminal dock.
       "cmd-;": "workspace::ToggleBottomDock",
       "cmd-alt-c": "editor::CopyRelativePath",
+      // Emulate vscode's shortcut to explicity reify a preview tab.
       "cmd-k enter": "pane::TogglePreviewTab"
     }
   },
@@ -19,23 +19,28 @@
     "context": "Editor",
     "bindings": {
       "ctrl-enter": null,
-      // This used to be the default, but stopped working with Zed 0.146.3...
-      "cmd-enter": "editor::NewlineBelow",
-      // Allow toggling of dock from editor (overrideing ToggleLineNumbers, which I don't use)
+      // Allow "cmd-;" to toggle the terminal dock while in the editor too (see
+      // this same binding in the "Workspace" context above). This overrides
+      // ToggleLineNumbers, which I don't use.
       "cmd-;": "workspace::ToggleBottomDock",
-      // Subword navigation and selection
+      // Subword navigation and selection.
       "ctrl-left": "editor::MoveToPreviousSubwordStart",
       "ctrl-right": "editor::MoveToNextSubwordEnd",
       "ctrl-shift-left": "editor::SelectToPreviousSubwordStart",
       "ctrl-shift-right": "editor::SelectToNextSubwordEnd",
-      // These are ctrl-shift by default, but I've taken those for subword selection
+      // These are ctrl-shift by default, but I've taken those for subword
+      // selection above.
       "cmd-alt-shift-right": "editor::SelectLargerSyntaxNode",
-      "cmd-alt-shift-left": "editor::SelectSmallerSyntaxNode"
+      "cmd-alt-shift-left": "editor::SelectSmallerSyntaxNode",
+      // Keep "alt-q" for rewrap (this was originally the default, but removed
+      // in #20425).
+      "alt-q": "editor::Rewrap"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
+      // Make it easy to create new terminal tabs.
       "cmd-n": "workspace::NewTerminal"
     }
   }
