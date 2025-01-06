@@ -1,4 +1,5 @@
-theme = light:catppuccin-latte, dark:catppuccin-mocha
+font-family = JetBrains Mono NL
+theme = light:adwaita, dark:catppuccin-mocha
 
 shell-integration-features = no-cursor
 cursor-style = block
