@@ -12,7 +12,12 @@
       "cmd-;": "workspace::ToggleBottomDock",
       "cmd-alt-c": "editor::CopyRelativePath",
       // Emulate vscode's shortcut to explicity reify a preview tab.
-      "cmd-k enter": "pane::TogglePreviewTab"
+      "cmd-k enter": "pane::TogglePreviewTab",
+      // Invoke lazygit in a new center tab, for maximum space.
+      "cmd-k g": [
+        "task::Spawn",
+        { "task_name": "Lazygit", "reveal_target": "center" }
+      ]
     }
   },
   {

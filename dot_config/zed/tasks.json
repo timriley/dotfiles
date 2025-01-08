@@ -1,0 +1,8 @@
+// Static tasks configuration.
+[
+  {
+    "label": "Lazygit",
+    "command": "lazygit -p $ZED_WORKTREE_ROOT",
+    "hide": "on_success"
+  }
+]
