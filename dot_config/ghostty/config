@@ -1,5 +1,7 @@
-font-family = JetBrains Mono NL
 theme = light:adwaita, dark:catppuccin-mocha
+
+font-family = JetBrains Mono NL
+font-size = 15
 
 shell-integration-features = no-cursor
 cursor-style = block
