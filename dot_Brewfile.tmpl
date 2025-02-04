@@ -35,6 +35,11 @@
   "wget"
   "yarn"
 -}}
+{{/* Dependencies for building ruby via mise */}}
+{{- $brews = concat $brews (list
+  "libyaml"
+)
+-}}
 {{/* Dependencies for building postgres via mise */}}
 {{- $brews = concat $brews (list
   "gcc"
