@@ -42,11 +42,13 @@
 -}}
 {{/* Dependencies for building postgres via mise */}}
 {{- $brews = concat $brews (list
+  "curl"
   "gcc"
+  "icu4c"
+  "ossp-uuid"
   "readline"
   "zlib"
-  "curl"
-  "ossp-uuid")
+)
 -}}
 {{ if .personal -}}
 {{- $brews = concat $brews (list
