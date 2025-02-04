@@ -1,9 +1,6 @@
 {{- if (eq .chezmoi.os "darwin") -}}
 
 {{- $taps := list
-  "golangci/tap"
-  "homebrew/cask-fonts"
-  "homebrew/cask-versions"
 -}}
 
 {{- $brews := list
@@ -19,7 +16,6 @@
   "fish"
   "gh"
   "git"
-  "golangci-lint"
   "graphviz"
   "helix"
   "httpie"
@@ -67,8 +63,6 @@
 {{- $casks := list
   "1password"
   "1password-cli"
-  "bike"
-  "caffeine"
   "cloudflare-warp"
   "dash"
   "deckset"
@@ -90,11 +84,9 @@
   "istat-menus"
   "imageoptim"
   "jordanbaird-ice"
-  "keyboard-maestro"
   "keyboardcleantool"
   "launchbar"
   "logi-options-plus"
-  "logseq"
   "menuwhere"
   "monodraw"
   "netnewswire"
@@ -107,7 +99,6 @@
   "raycast"
   "reflect"
   "rode-central"
-  "skype"
   "slack"
   "tower"
   "transmit"
@@ -115,7 +106,6 @@
   "vlc"
   "zed"
   "zoom"
-  "zulip"
 -}}
 {{ if .personal -}}
 {{- $casks = concat $casks (list
@@ -123,8 +113,6 @@
   "calibre"
   "kobo"
   "transmission"
-  "utm"
-  "vivaldi"
 )
 -}}
 {{ end -}}
@@ -143,7 +131,6 @@
   "1password for Safari -> 1569813296"
   "Acorn 7 -> 1547371478"
   "AdGuard for Safari -> 1440147259"
-  "BBEdit -> 404009241"
   "Boop -> 1518425043"
   "DaisyDisk -> 411643860"
   "GoodLinks -> 1474335294"
@@ -156,7 +143,6 @@
   "Pathology -> 877848776"
   "Patterns -> 429449079"
   "Poolside FM -> 1514817810"
-  "Save to Reflect -> 1590481717"
   "Shush -> 496437906"
   "SiteSucker -> 442168834"
   "Soulver -> 413965349"
