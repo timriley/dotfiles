@@ -1,0 +1,11 @@
+#!/bin/bash
+
+{{ if eq .chezmoi.os "darwin" -}}
+
+{{/* Install Moves (https://mikkelmalmberg.com/moves), not available via brew */}}
+curl https://moves-updates.s3.eu-west-1.amazonaws.com/Moves-latest.zip -o moves-latest.zip
+unzip moves-latest.zip
+mv Moves.app /Applications
+rm moves-latest.zip
+
+{{ end -}}
