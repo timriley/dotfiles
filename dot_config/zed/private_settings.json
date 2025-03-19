@@ -1,12 +1,16 @@
 // Zed settings. See https://zed.dev/docs/configuring-zed.
 
 {
-  // Editor settings
+  // EDITOR SETTINGS
 
   // I run in light mode 90% of the time. Catppuccin is nice for both modes.
   "theme": {
     "light": "Catppuccin Latte - No Italics",
     "dark": "Catppuccin Mocha - No Italics"
+  },
+  "icon_theme": {
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
   },
 
   // I prefer simple text, none of these fancy code ligatures.
@@ -17,30 +21,42 @@
 
   // Keep my project panel simple.
   "project_panel": {
-    "folder_icons": false,
-    "file_icons": false,
+    // "folder_icons": false,
+    // "file_icons": false,
     "indent_size": 10, // Slightly less than default, for more compact nesting.
     "auto_fold_dirs": true,
     "indent_guides": {
       "show": "never"
     }
   },
+
+  // Make the terminal match my Mac terminal.
   "terminal": {
-    "blinking": "off" // Make the terminal match my Mac terminal.
+    "blinking": "off",
+    "line_height": "standard",
+    "font_size": 15,
+    "font_weight": 300
   },
+
   // I tend to use the multi-buffer to jump directly to the relevant files.
   "double_click_in_multibuffer": "open",
 
-  // Language settings
+  // LANGUAGE SETTINGS
 
   "tab_size": 2,
   "languages": {
+    "HTML": {
+      "preferred_line_length": 120,
+      "wrap_guides": [120]
+    },
     "Markdown": {
+      "preferred_line_length": 100,
       "soft_wrap": "preferred_line_length",
-      "preferred_line_length": 100
+      "show_edit_predictions": false
     },
     "Ruby": {
       "tab_size": 2,
+      "preferred_line_length": 100,
       "wrap_guides": [100],
       // Use ruby-lsp, not the Ruby extension's default of solargraph.
       "language_servers": ["ruby-lsp", "!solargraph"],
@@ -48,29 +64,30 @@
     }
   },
 
-  // Disable features (No telemetry, no AI anywhere).
+  // EDITOR FEATURES
+
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-7-sonnet"
+    },
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+
+  // DISABLE FEATURES
 
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "features": {
-    "copilot": false,
-    "inline_completion_provider": "none"
-  },
   "collaboration_panel": {
     "button": false
   },
   "chat_panel": {
-    "button": false,
+    "button": "never",
     "dock": "left"
-  },
-  "assistant": {
-    "enabled": false,
-    "version": "2",
-    "button": false
-  },
-  "assistant_v2": {
-    "enabled": false
   }
 }

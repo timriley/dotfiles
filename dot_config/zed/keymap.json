@@ -4,13 +4,11 @@
     "bindings": {
       // Always open a new window when switching recent projects.
       "cmd-alt-o": ["projects::OpenRecent", { "create_new_window": true }],
-      // Disable right dock toggling (which contains the AI assistant only).
-      "cmd-r": null,
       // Focus the terminal with a much easier shortcut than the default "ctrl+`".
       "cmd-j": "terminal_panel::ToggleFocus",
       // Allow easy showing/hiding of the terminal dock.
       "cmd-;": "workspace::ToggleBottomDock",
-      "cmd-alt-c": "editor::CopyRelativePath",
+      "cmd-alt-c": "workspace::CopyRelativePath",
       // Emulate vscode's shortcut to explicity reify a preview tab.
       "cmd-k enter": "pane::TogglePreviewTab",
       // Invoke lazygit in a new center tab, for maximum space.
