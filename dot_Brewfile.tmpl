@@ -56,16 +56,6 @@
 )
 -}}
 {{ end -}}
-{{ if .buildkite -}}
-{{- $brews = concat $brews (list
-  "awscli"
-  "buildkite/buildkite/buildkite-agent"
-  "buildkite/developer-versions/bik"
-  "kcat"
-  "tsub/s3-edit/s3-edit"
-)
--}}
-{{ end -}}
 
 {{- $casks := list
   "1password"
@@ -119,16 +109,6 @@
   "calibre"
   "kobo"
   "transmission"
-)
--}}
-{{ end -}}
-{{ if .buildkite -}}
-{{- $casks = concat $casks (list
-  "aws-vault"
-  "google-chrome"
-  "loom"
-  "mimestream"
-  "ngrok"
 )
 -}}
 {{ end -}}

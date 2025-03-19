@@ -1,35 +1,7 @@
-{{/* boolean feature tags */}}
-{{- $personal := false -}}{{/* true if this is my personal machine */}}
-{{- $buildkite := false -}}{{/* true if this is my work machine */}}
+{{- $personal := promptBool "Is this my personal machine?" -}}
 
 {{- $email := promptString "Personal email" -}}
-{{- $buildkiteEmail := "" -}}
-
-{{/* Work around unreliable hostname on darwin */}}
-{{- $hostname := .chezmoi.hostname -}}
-{{- if eq .chezmoi.os "darwin" -}}
-{{-   $computerName := output "scutil" "--get" "ComputerName" | trim -}}
-{{-   if eq $computerName "Tim’s MacBook Air" -}}
-{{-     $hostname = "tims-mba" -}}
-{{-   else if eq $computerName "Tim’s BuildBook Pro" -}}
-{{-     $hostname = "buildkite-mbp" -}}
-{{-   else -}}
-{{-     $hostname = $computerName -}}
-{{-   end -}}
-{{- end -}}
-
-{{- if eq $hostname "tims-mba" -}}
-{{-   $personal = true -}}
-{{- else if eq $hostname "buildkite-mbp" -}}
-{{-   $buildkite = true -}}
-{{-   $buildkiteEmail = promptString "Buildkite email" -}}
-{{- end -}}
 
 data:
-  hostname: {{ $hostname | quote }}
   personal: {{ $personal }}
   email: {{ $email | quote }}
-  buildkite: {{ $buildkite }}
-{{- if $buildkite }}
-  buildkite_email: {{ $buildkiteEmail | quote }}
-{{- end -}}
