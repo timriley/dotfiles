@@ -112,6 +112,12 @@
 )
 -}}
 {{ end -}}
+{{ if .work -}}
+{{- $casks = concat $casks (list
+  "setapp"
+)
+-}}
+{{ end -}}
 
 {{- $apps := list
   "1password for Safari -> 1569813296"
