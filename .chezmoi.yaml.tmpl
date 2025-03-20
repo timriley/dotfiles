@@ -1,7 +1,17 @@
-{{- $personal := promptBool "Is this my personal machine?" -}}
+{{- $personal := promptBool "Is this my personal machine" -}}
+{{- $work := promptBool "Is this my work machine" -}}
 
 {{- $email := promptString "Personal email" -}}
+{{- $workEmail := "" -}}
+
+{{- if $work -}}
+  {{- $workEmail := promptString "Work email" -}}
+{{- end -}}
 
 data:
   personal: {{ $personal }}
+  work: {{ $work }}
   email: {{ $email | quote }}
+{{- if $work }}
+  work_email: {{ $workEmail | quote }}
+{{- end -}}
