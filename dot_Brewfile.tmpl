@@ -55,6 +55,12 @@
 )
 -}}
 {{ end -}}
+{{ if .work -}}
+{{- $brews = concat $brews  (list
+  "direnv"
+)
+-}}
+{{ end -}}
 
 {{- $casks := list
   "1password"

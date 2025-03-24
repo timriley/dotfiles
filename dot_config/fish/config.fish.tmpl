@@ -13,6 +13,16 @@ end
 # mise
 mise activate fish | source
 
+{{ if .work -}}
+# Nix
+if test -e "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish"
+  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
+end
+
+# direnv
+direnv hook fish | source
+{{ end -}}
+
 # Editor
 set --export EDITOR "zed"
 
