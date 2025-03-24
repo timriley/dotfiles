@@ -5,7 +5,7 @@
 {{- $workEmail := "" -}}
 
 {{- if $work -}}
-  {{- $workEmail := promptString "Work email" -}}
+  {{- $workEmail = promptString "Work email" -}}
 {{- end -}}
 
 data:
