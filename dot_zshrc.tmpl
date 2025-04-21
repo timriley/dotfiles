@@ -7,15 +7,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Use mise
 eval "$(mise activate zsh)"
 
-{{ if .work -}}
-# Nix
-if [ -e "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
-  . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
-fi
-
-# direnv
-eval "$(direnv hook zsh)"
-{{ end -}}
 
 # Configure Zim modules
 zstyle ':zim:zmodule' use 'degit'
