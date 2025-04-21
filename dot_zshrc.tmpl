@@ -7,6 +7,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Use mise
 eval "$(mise activate zsh)"
 
+# OrbStack
+source "$HOME/.orbstack/shell/init.zsh" 2>/dev/null || :
 
 # Configure Zim modules
 zstyle ':zim:zmodule' use 'degit'
