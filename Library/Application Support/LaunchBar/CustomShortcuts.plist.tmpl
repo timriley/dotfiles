@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemIdentifierVersion</key>
+	<integer>4294967303</integer>
+	<key>shortcuts</key>
+	<dict>
+		<key>ODLBPathItem:/Applications/Ghostty.app</key>
+		<string>t</string>
+		<key>ODLBPathItem:/Applications/Zed.app</key>
+		<string>tm</string>
+		<key>ODLBPathItem:/System/Applications/Music.app</key>
+		<string>tun</string>
+		{{ if .personal -}}
+		<key>ODLBPathItem:/Applications/Safari.app</key>
+		<string>s</string>
+		{{- end -}}
+		{{ if .work -}}
+		<key>ODLBPathItem:/Applications/Arc.app</key>
+		<string>s</string>
+		{{- end }}
+	</dict>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
