@@ -7,7 +7,7 @@
 ---
 --- From https://github.com/jasonrudolph/ControlEscape.spoon
 
-local obj={}
+local obj = {}
 obj.__index = obj
 
 function obj:init()
@@ -22,7 +22,7 @@ function obj:init()
 
   -- Create an eventtap to run each time the modifier keys change (i.e., each
   -- time a key like control, shift, option, or command is pressed or released)
-  self.controlTap = hs.eventtap.new({hs.eventtap.event.types.flagsChanged},
+  self.controlTap = hs.eventtap.new({ hs.eventtap.event.types.flagsChanged },
     function(event)
       local newModifiers = event:getFlags()
 
@@ -56,7 +56,7 @@ function obj:init()
   -- enters the down state. We only want to send `escape` if `control` is
   -- pressed and released in isolation. If `control` is pressed in combination
   -- with any other key, we don't want to send `escape`.
-  self.keyDownEventTap = hs.eventtap.new({hs.eventtap.event.types.keyDown},
+  self.keyDownEventTap = hs.eventtap.new({ hs.eventtap.event.types.keyDown },
     function(event)
       self.sendEscape = false
       return false

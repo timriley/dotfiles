@@ -1,10 +1,3 @@
-[".hammerspoon/Spoons/SpoonInstall.spoon"]
-  type = "archive"
-  url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip"
-  exact = true
-  stripComponents = 1
-  refreshPeriod = "744h"
-
 [".zim/zimfw.zsh"]
   type = "file"
   url = "https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh"
