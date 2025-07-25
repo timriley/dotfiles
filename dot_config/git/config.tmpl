@@ -14,8 +14,7 @@
 [gpg]
   format = ssh
 [gpg "ssh"]
-  # See https://1password.community/discussion/131318/ssh-commit-signing
-  program = {{ .chezmoi.homeDir }}/.config/git/gpg-ssh-program
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [init]
   defaultBranch = main
 [branch]
