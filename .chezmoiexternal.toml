@@ -2,3 +2,11 @@
 type = "file"
 url = "https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh"
 refreshPeriod = "744h"
+
+["Library/Application Support/LaunchBar/Actions/Caffeinate.lbaction"]
+type = "archive"
+url = "https://github.com/prenagha/launchbar/archive/main.zip"
+include = ["*/Caffeinate.lbaction/**"]
+stripComponents = 2
+exact = true
+refreshPeriod = "744h"
