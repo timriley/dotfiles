@@ -13,16 +13,20 @@
     "dark": "Catppuccin Mocha"
   },
 
-  // I prefer simple text, none of these fancy code ligatures.
-  "ui_font_family": "JetBrains Mono NL",
+  // iA Writer Quattro is nice for a UI font.
+  "ui_font_family": "iA Writer Quattro V",
   "ui_font_size": 15,
+  // I prefer simpler buffer text. No ligatures.
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrains Mono NL",
 
+  // We only have one lever for the agent panel text display, even though
+  // several different font sizes are used. Crank it up to make the text input
+  // area more comfortable.
+  "agent_font_size": 18,
+
   // Keep my project panel simple.
   "project_panel": {
-    // "folder_icons": false,
-    // "file_icons": false,
     "indent_size": 10, // Slightly less than default, for more compact nesting.
     "auto_fold_dirs": true,
     "indent_guides": {
@@ -66,15 +70,17 @@
 
   // EDITOR FEATURES
 
-  "assistant": {
+  "agent": {
+    "play_sound_when_agent_done": true,
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-3-7-sonnet"
-    },
-    "version": "2"
+      "model": "gpt-4.1"
+    }
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "none"
   },
 
   // DISABLE FEATURES
