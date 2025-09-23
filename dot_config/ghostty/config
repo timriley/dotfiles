@@ -8,3 +8,12 @@ cursor-style = block
 cursor-style-blink = false
 
 window-padding-x = 6
+
+# Keybindings
+
+# Enter new line without executing command
+keybind = shift+enter=text:\n
+
+# Delete previous word
+# (Required as of v1.2.0. See https://github.com/ghostty-org/ghostty/discussions/8677)
+keybind = alt+backspace=text:\x17
