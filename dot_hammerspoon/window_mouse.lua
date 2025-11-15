@@ -4,7 +4,7 @@ local SnapValues = require("snap_values")
 local window_mouse = {}
 
 -- Constants
-local SNAP_THRESHOLD = 10
+local SNAP_THRESHOLD = 6
 
 -- Internal state
 local drag_state = {
