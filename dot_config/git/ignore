@@ -10,3 +10,5 @@ tmp/**/*
 .byebug_history
 .pryrc
 .overmind*.sock
+
+**/.claude/settings.local.json
