@@ -15,7 +15,9 @@
       "cmd-k g": [
         "task::Spawn",
         { "task_name": "Lazygit", "reveal_target": "center" }
-      ]
+      ],
+      "ctrl-alt--": ["workspace::DecreaseActiveDockSize", { "px": 80 }],
+      "ctrl-alt-=": ["workspace::IncreaseActiveDockSize", { "px": 80 }]
     }
   },
   {
