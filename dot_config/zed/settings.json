@@ -19,11 +19,8 @@
   // I prefer simpler buffer text. No ligatures.
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrains Mono NL",
-
-  // We only have one lever for the agent panel text display, even though
-  // several different font sizes are used. Crank it up to make the text input
-  // area more comfortable.
-  "agent_font_size": 18,
+  "agent_ui_font_size": 16,
+  "agent_buffer_font_size": 14,
 
   // Keep my project panel simple.
   "project_panel": {
@@ -71,12 +68,10 @@
   // EDITOR FEATURES
 
   "agent": {
-    "play_sound_when_agent_done": true,
-    "always_allow_tool_actions": true,
-    "default_profile": "write",
+    "default_profile": "minimal",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "claude-sonnet-4"
     }
   },
   "features": {
@@ -91,9 +86,5 @@
   },
   "collaboration_panel": {
     "button": false
-  },
-  "chat_panel": {
-    "button": "never",
-    "dock": "left"
   }
 }
