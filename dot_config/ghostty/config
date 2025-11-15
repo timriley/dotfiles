@@ -9,6 +9,9 @@ cursor-style-blink = false
 
 window-padding-x = 6
 
+working-directory = home
+window-inherit-working-directory = true
+
 # Keybindings
 
 # Enter new line without executing command
