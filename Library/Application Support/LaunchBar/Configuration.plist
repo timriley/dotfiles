@@ -25,12 +25,6 @@
 	<array>
 		<dict>
 			<key>className</key>
-			<string>ODLBEmojiRule</string>
-			<key>subsearchOnly</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>className</key>
 			<string>ODLBContactsRule</string>
 			<key>subsearchOnly</key>
 			<true/>
@@ -40,31 +34,93 @@
 			<string>ODLBActionsRule</string>
 		</dict>
 		<dict>
-			<key>abbreviatedSpecificPlaces</key>
-			<array>
-				<string>/Applications</string>
-				<string>/System/Library/CoreServices</string>
-				<string>~/Applications</string>
-				<string>~/Library/Printers</string>
-			</array>
 			<key>className</key>
-			<string>ODLBApplicationsRule</string>
+			<string>ODLBMountedVolumesRule</string>
+			<key>enabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBWorkflowsRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>~</string>
+			<key>className</key>
+			<string>ODLBFolderContentsRule</string>
+			<key>enabled</key>
+			<false/>
+			<key>subfolderLevels</key>
+			<integer>0</integer>
+			<key>typeCollectionIdentifier</key>
+			<string>@folder</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBCloudDocumentsRule</string>
+			<key>enabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>aliasName</key>
+			<string>System Directories</string>
+			<key>className</key>
+			<string>ODLBListRule</string>
+			<key>list</key>
+			<array>
+				<string>/bin</string>
+				<string>/private/etc</string>
+				<string>/sbin</string>
+				<string>/private/tmp</string>
+				<string>/usr</string>
+				<string>/usr/bin</string>
+				<string>/usr/sbin</string>
+				<string>/usr/local</string>
+				<string>/usr/local/bin</string>
+				<string>/private/var</string>
+				<string>/System</string>
+				<string>~/Library</string>
+			</array>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBSafariReadingListRule</string>
+			<key>subsearchOnly</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBNetworkLocationsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBShortcutsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBServicesRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBTagsRule</string>
+			<key>enabled</key>
+			<false/>
 		</dict>
 		<dict>
 			<key>className</key>
 			<string>ODLBCategoriesRule</string>
 		</dict>
 		<dict>
-			<key>abbreviatedPath</key>
-			<string>_safariHistoryPath</string>
 			<key>className</key>
-			<string>ODLBHistoryRule</string>
+			<string>ODLBThemesRule</string>
 		</dict>
 		<dict>
-			<key>abbreviatedPath</key>
-			<string>_safariBookmarksPath</string>
 			<key>className</key>
-			<string>ODLBBookmarksRule</string>
+			<string>ODLBSnippetsRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBEmojiRule</string>
 			<key>subsearchOnly</key>
 			<true/>
 		</dict>
@@ -76,25 +132,18 @@
 		</dict>
 		<dict>
 			<key>className</key>
-			<string>ODLBListRule</string>
+			<string>ODLBCalendarsRule</string>
 		</dict>
 		<dict>
+			<key>abbreviatedSpecificPlaces</key>
+			<array>
+				<string>/Applications</string>
+				<string>/System/Library/CoreServices</string>
+				<string>~/Applications</string>
+				<string>~/Library/Printers</string>
+			</array>
 			<key>className</key>
-			<string>ODLBWorkflowsRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBSnippetsRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBManagedSearchTemplatesRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBCloudDocumentsRule</string>
-			<key>enabled</key>
-			<false/>
+			<string>ODLBApplicationsRule</string>
 		</dict>
 		<dict>
 			<key>aliasName</key>
@@ -121,98 +170,15 @@
 		</dict>
 		<dict>
 			<key>className</key>
-			<string>ODLBSafariReadingListRule</string>
-			<key>subsearchOnly</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>className</key>
 			<string>ODLBSafariTopSitesRule</string>
 			<key>subsearchOnly</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>className</key>
-			<string>ODLBPrefPanesRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBTagsRule</string>
-			<key>enabled</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>abbreviatedPath</key>
-			<string>~/Documents</string>
-			<key>className</key>
-			<string>ODLBFolderContentsRule</string>
-			<key>enabled</key>
-			<false/>
-			<key>skipQualifiers</key>
-			<array>
-				<string>iTunes Music</string>
-			</array>
-		</dict>
-		<dict>
-			<key>aliasName</key>
-			<string>System Directories</string>
-			<key>className</key>
-			<string>ODLBListRule</string>
-			<key>list</key>
-			<array>
-				<string>/bin</string>
-				<string>/private/etc</string>
-				<string>/sbin</string>
-				<string>/private/tmp</string>
-				<string>/usr</string>
-				<string>/usr/bin</string>
-				<string>/usr/sbin</string>
-				<string>/usr/local</string>
-				<string>/usr/local/bin</string>
-				<string>/private/var</string>
-				<string>/System</string>
-				<string>~/Library</string>
-			</array>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBTowerRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBNetworkLocationsRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBCalendarsRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBReminderListsRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
 			<string>ODLBSafariCloudTabsRule</string>
 			<key>subsearchOnly</key>
 			<true/>
-		</dict>
-		<dict>
-			<key>abbreviatedPath</key>
-			<string>~</string>
-			<key>className</key>
-			<string>ODLBFolderContentsRule</string>
-			<key>enabled</key>
-			<false/>
-			<key>subfolderLevels</key>
-			<integer>0</integer>
-			<key>typeCollectionIdentifier</key>
-			<string>@folder</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBMountedVolumesRule</string>
-			<key>enabled</key>
-			<false/>
 		</dict>
 		<dict>
 			<key>abbreviatedPath</key>
@@ -224,15 +190,11 @@
 		</dict>
 		<dict>
 			<key>className</key>
-			<string>ODLBThemesRule</string>
+			<string>ODLBReminderListsRule</string>
 		</dict>
 		<dict>
 			<key>className</key>
-			<string>ODLBShortcutsRule</string>
-		</dict>
-		<dict>
-			<key>className</key>
-			<string>ODLBServicesRule</string>
+			<string>ODLBListRule</string>
 		</dict>
 		<dict>
 			<key>aliasName</key>
@@ -241,6 +203,14 @@
 			<string>ODLBCustomSearchTemplatesRule</string>
 			<key>templates</key>
 			<array>
+				<dict>
+					<key>name</key>
+					<string>GitHub Search</string>
+					<key>templateURL</key>
+					<string>https://github.com/search?q=*</string>
+					<key>uuid</key>
+					<string>9279E771-33C4-4975-BA23-77336CE77D2A</string>
+				</dict>
 				<dict>
 					<key>name</key>
 					<string>Hanami Discourse Search</string>
@@ -259,17 +229,47 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>_safariBookmarksPath</string>
+			<key>className</key>
+			<string>ODLBBookmarksRule</string>
+			<key>subsearchOnly</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBManagedSearchTemplatesRule</string>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBTowerRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>_safariHistoryPath</string>
+			<key>className</key>
+			<string>ODLBHistoryRule</string>
+		</dict>
+		<dict>
+			<key>abbreviatedPath</key>
+			<string>~/Documents</string>
+			<key>className</key>
+			<string>ODLBFolderContentsRule</string>
+			<key>enabled</key>
+			<false/>
+			<key>skipQualifiers</key>
+			<array>
+				<string>iTunes Music</string>
+			</array>
+		</dict>
+		<dict>
+			<key>className</key>
+			<string>ODLBPrefPanesRule</string>
+		</dict>
 	</array>
 	<key>typeCollections</key>
 	<array>
-		<dict>
-			<key>definition</key>
-			<string>c, cpp, h, java, js, m, php, pl, py, rb, rs, swift, xib</string>
-			<key>identifier</key>
-			<string>2</string>
-			<key>name</key>
-			<string>Source Files</string>
-		</dict>
 		<dict>
 			<key>definition</key>
 			<string>htm, html, htmld</string>
@@ -277,6 +277,14 @@
 			<string>1</string>
 			<key>name</key>
 			<string>HTML Files</string>
+		</dict>
+		<dict>
+			<key>definition</key>
+			<string>c, cpp, h, java, js, m, php, pl, py, rb, rs, swift, xib</string>
+			<key>identifier</key>
+			<string>2</string>
+			<key>name</key>
+			<string>Source Files</string>
 		</dict>
 		<dict>
 			<key>definition</key>
