@@ -4,20 +4,18 @@
     "bindings": {
       // Always open a new window when switching recent projects.
       "cmd-alt-o": ["projects::OpenRecent", { "create_new_window": true }],
+      // Emulate vscode's shortcut to explicity reify a preview tab.
+      "cmd-k enter": "pane::TogglePreviewTab",
       // Focus the terminal with a much easier shortcut than the default "ctrl+`".
       "cmd-j": "terminal_panel::ToggleFocus",
       // Allow easy showing/hiding of the terminal dock.
       "cmd-;": "workspace::ToggleBottomDock",
       "cmd-alt-c": "workspace::CopyRelativePath",
-      // Emulate vscode's shortcut to explicity reify a preview tab.
-      "cmd-k enter": "pane::TogglePreviewTab",
-      // Invoke lazygit in a new center tab, for maximum space.
-      "cmd-k g": [
-        "task::Spawn",
-        { "task_name": "Lazygit", "reveal_target": "center" }
-      ],
+      // Resize the active dock (in my case, mostly the terminal)
       "ctrl-alt--": ["workspace::DecreaseActiveDockSize", { "px": 80 }],
-      "ctrl-alt-=": ["workspace::IncreaseActiveDockSize", { "px": 80 }]
+      "ctrl-alt-=": ["workspace::IncreaseActiveDockSize", { "px": 80 }],
+      // Open Tower
+      "cmd-k g": ["task::Spawn", { "task_name": "Tower" }]
     }
   },
   {

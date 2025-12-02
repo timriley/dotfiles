@@ -1,8 +1,9 @@
 // Static tasks configuration.
 [
   {
-    "label": "Lazygit",
-    "command": "lazygit -p $ZED_WORKTREE_ROOT",
-    "hide": "on_success"
+    "label": "Tower",
+    "command": "gittower $ZED_WORKTREE_ROOT",
+    "hide": "always",
+    "reveal": "never"
   }
 ]
