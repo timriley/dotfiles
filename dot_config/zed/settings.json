@@ -19,7 +19,7 @@
   // I prefer simpler buffer text. No ligatures.
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrains Mono NL",
-  "agent_ui_font_size": 16,
+  "agent_ui_font_size": 18,
   "agent_buffer_font_size": 14,
 
   // Keep my project panel simple.
@@ -65,14 +65,18 @@
     }
   },
 
-  // EDITOR FEATURES
+  // AI FEATURES
 
   "agent": {
-    "default_profile": "minimal",
+    // Agent feedback buttons send the thread to Zed. Don't evern want that.
+    "enable_feedback": false,
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
-    }
+      "model": "claude-sonnet-4.5"
+    },
+    "use_modifier_to_send": true
   },
   "features": {
     "edit_prediction_provider": "none"
