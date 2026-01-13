@@ -63,6 +63,10 @@
       "language_servers": ["ruby-lsp", "!solargraph"],
       "use_on_type_format": false, // see https://github.com/zed-industries/zed/issues/16617
     },
+    "YAML": {
+      "preferred_line_length": 100,
+      "wrap_guides": [100],
+    },
   },
 
   // AI FEATURES
