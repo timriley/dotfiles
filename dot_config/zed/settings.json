@@ -6,11 +6,11 @@
   // I run in light mode 90% of the time. Catppuccin is nice for both modes.
   "theme": {
     "light": "Catppuccin Latte - No Italics",
-    "dark": "Catppuccin Mocha - No Italics"
+    "dark": "Catppuccin Mocha - No Italics",
   },
   "icon_theme": {
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Mocha",
   },
 
   // iA Writer Quattro is nice for a UI font.
@@ -27,8 +27,8 @@
     "indent_size": 10, // Slightly less than default, for more compact nesting.
     "auto_fold_dirs": true,
     "indent_guides": {
-      "show": "never"
-    }
+      "show": "never",
+    },
   },
 
   // Make the terminal match my Mac terminal.
@@ -36,7 +36,7 @@
     "blinking": "off",
     "line_height": "standard",
     "font_size": 15,
-    "font_weight": 300
+    "font_weight": 300,
   },
 
   // I tend to use the multi-buffer to jump directly to the relevant files.
@@ -48,12 +48,12 @@
   "languages": {
     "HTML": {
       "preferred_line_length": 120,
-      "wrap_guides": [120]
+      "wrap_guides": [120],
     },
     "Markdown": {
       "preferred_line_length": 100,
       "soft_wrap": "preferred_line_length",
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
     },
     "Ruby": {
       "tab_size": 2,
@@ -61,8 +61,8 @@
       "wrap_guides": [100],
       // Use ruby-lsp, not the Ruby extension's default of solargraph.
       "language_servers": ["ruby-lsp", "!solargraph"],
-      "use_on_type_format": false // see https://github.com/zed-industries/zed/issues/16617
-    }
+      "use_on_type_format": false, // see https://github.com/zed-industries/zed/issues/16617
+    },
   },
 
   // AI FEATURES
@@ -74,21 +74,21 @@
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
+      "model": "claude-sonnet-4.5",
     },
-    "use_modifier_to_send": true
+    "use_modifier_to_send": true,
   },
   "features": {
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "none",
   },
 
   // DISABLE FEATURES
 
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "collaboration_panel": {
-    "button": false
-  }
+    "button": false,
+  },
 }
