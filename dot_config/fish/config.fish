@@ -36,4 +36,10 @@ set --export ICU_LIBS "-L$(brew --prefix icu4c)/lib -licui18n -licuuc -licudata"
 function fish_user_key_bindings
   # Thanks, https://github.com/fish-shell/fish-shell/issues/905#issuecomment-20559486
   bind \cc 'echo; commandline ""; commandline -f repaint'
+
+  # Option-Backspace: delete back to word boundaries (stops at -, /, etc.)
+  # Ctrl+W: delete back to path component (stops at -, /, whitespace, etc.)
+  # Note: Requires Ghostty to send \x1b\x7f for alt+backspace instead of \x17
+  bind \e\x7f backward-kill-word
+  bind \cw backward-kill-path-component
 end

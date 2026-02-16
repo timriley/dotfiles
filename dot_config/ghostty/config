@@ -17,6 +17,9 @@ window-inherit-working-directory = true
 # Enter new line without executing command
 keybind = shift+enter=text:\n
 
-# Delete previous word
-# (Required as of v1.2.0. See https://github.com/ghostty-org/ghostty/discussions/8677)
-keybind = alt+backspace=text:\x17
+# Allow option+backspace to properly delete previous words in fish. Required as of v1.2.0.
+#
+# See https://github.com/ghostty-org/ghostty/discussions/8677.
+#
+# (If needed, an alternative is to set `keybind = alt+backspace=text:\x1b\x7f`).
+macos-option-as-alt = true
