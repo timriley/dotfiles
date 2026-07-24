@@ -1,0 +1,19 @@
+/*
+  Custom stylesheet to avoid bright flashes when opening new pages in dark mode on macOS Safari.
+
+  Configure this via Settings > Advanced > Style sheet.
+
+  Via https://www.reddit.com/r/duckduckgo/comments/1fl73g8/safari_180_still_flashes_bright_white_in_dark/
+*/
+
+@media (prefers-color-scheme: dark) {
+  body:empty {
+    background-color: #161616;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body:empty {
+    background-color: #ffffff;
+  }
+}
