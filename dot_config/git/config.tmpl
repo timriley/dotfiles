@@ -34,9 +34,3 @@
 [alias]
   ap = add --patch
   co = checkout
-{{ if .work -}}
-[includeIf "gitdir:~/Source/thelookoutway/"]
-  path = config-tlw
-[includeIf "gitdir:~/src/thelookoutway/"]
-  path = config-tlw
-{{- end }}
