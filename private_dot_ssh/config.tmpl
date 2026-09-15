@@ -4,6 +4,11 @@ Host *
   IdentityAgent ~/.1password/agent.sock
 
 {{ if .work -}}
+Host github.com
+  User git
+  IdentityFile ~/.ssh/personal_github_auth.pub
+  IdentitiesOnly yes
+
 # See also ~/.config/ssh/config-hotdoc
 Host htdc-github
   Hostname github.com

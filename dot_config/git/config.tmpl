@@ -34,6 +34,8 @@
 [alias]
   ap = add --patch
   co = checkout
+[url "git@github.com:"]
+  insteadOf = https://github.com/
 {{ if .work -}}
 [includeIf "gitdir:~/Source/hotdoc/"]
   path = config-hotdoc
