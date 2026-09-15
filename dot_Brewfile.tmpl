@@ -61,13 +61,13 @@
 {{- $casks := list
   "1password"
   "1password-cli"
-  "cloudflare-warp"
+  "claude-code"
   "dash"
   "deckset"
   "discord"
   "fantastical"
+  "fastmail"
   "firefox"
-  "fmail3"
   "font-ia-writer-duo"
   "font-ia-writer-mono"
   "font-ia-writer-quattro"
@@ -93,7 +93,6 @@
   "postico"
   "rapidapi"
   "radio-silence"
-  "reflect"
   "rode-central"
   "signal"
   "slack"
@@ -107,8 +106,10 @@
 {{- $casks = concat $casks (list
   "backblaze"
   "calibre"
+  "cloudflare-warp"
   "dosbox-staging-app"
   "kobo"
+  "reflect"
   "signal"
   "transmission"
   "whatsapp"
@@ -116,10 +117,15 @@
 )
 -}}
 {{ end -}}
+{{ if .work -}}
+{{- $casks = concat $casks (list
+  "zen"
+)
+-}}
+{{ end -}}
 
 {{- $apps := list
   "1password for Safari -> 1569813296"
-  "Acorn 7 -> 1547371478"
   "AdGuard for Safari -> 1440147259"
   "Boop -> 1518425043"
   "DaisyDisk -> 411643860"

@@ -3,7 +3,7 @@
 {
   // EDITOR SETTINGS
 
-  // I run in light mode 90% of the time. Catppuccin is nice for both modes.
+  // Appearance
   "theme": {
     "light": "Catppuccin Latte - No Italics",
     "dark": "Catppuccin Mocha - No Italics",
@@ -12,23 +12,27 @@
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha",
   },
-
-  // iA Writer Quattro is nice for a UI font.
   "ui_font_family": "iA Writer Quattro V",
   "ui_font_size": 15,
-  // I prefer simpler buffer text. No ligatures.
   "buffer_font_size": 14,
   "buffer_font_family": "JetBrains Mono NL",
   "agent_ui_font_size": 18,
   "agent_buffer_font_size": 14,
 
-  // Keep my project panel simple.
+  // Panels
   "project_panel": {
+    "dock": "left",
     "indent_size": 10, // Slightly less than default, for more compact nesting.
     "auto_fold_dirs": true,
     "indent_guides": {
       "show": "never",
     },
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
   },
 
   // Make the terminal match my Mac terminal.
@@ -39,6 +43,9 @@
     "font_weight": 300,
   },
 
+  // EDITOR BEHAVIOR
+
+  "cli_default_open_behavior": "new_window",
   // I tend to use the multi-buffer to jump directly to the relevant files.
   "double_click_in_multibuffer": "open",
 
@@ -52,7 +59,7 @@
     },
     "Markdown": {
       "preferred_line_length": 100,
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
       "show_edit_predictions": false,
     },
     "Ruby": {
@@ -72,27 +79,34 @@
   // AI FEATURES
 
   "agent": {
-    // Agent feedback buttons send the thread to Zed. Don't evern want that.
-    "enable_feedback": false,
-    "always_allow_tool_actions": true,
+    "sidebar_side": "right",
+    "dock": "right",
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4.5",
     },
     "use_modifier_to_send": true,
+    // Agent feedback buttons send the thread to Zed. Don't ever want that.
+    "enable_feedback": false,
   },
-  "features": {
-    "edit_prediction_provider": "none",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "edit_predictions": {
+    "provider": "none"
   },
 
   // DISABLE FEATURES
 
+  "collaboration_panel": {
+    "dock": "left",
+    "button": false,
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
-  },
-  "collaboration_panel": {
-    "button": false,
   },
 }

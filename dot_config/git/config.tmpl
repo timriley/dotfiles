@@ -34,3 +34,9 @@
 [alias]
   ap = add --patch
   co = checkout
+{{ if .work -}}
+[includeIf "gitdir:~/Source/hotdoc/"]
+  path = config-hotdoc
+[includeIf "gitdir:~/src/hotdoc/"]
+  path = config-hotdoc
+{{- end }}

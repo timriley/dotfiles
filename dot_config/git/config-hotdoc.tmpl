@@ -1,0 +1,9 @@
+{{ if .work -}}
+[user]
+  email = {{ $.work_email }}
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBfyXhfLms8sPHkqRGLm+XPD1o+agGJnSPVH2a5ulv4k
+
+# Allows `git clone htdc:repo-name-here`; see also ~/.ssh/config.
+[url "git@htdc-github:htdc/"]
+  insteadOf = htdc:
+{{ end -}}

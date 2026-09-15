@@ -2,3 +2,12 @@ Include ~/.orbstack/ssh/config
 
 Host *
   IdentityAgent ~/.1password/agent.sock
+
+{{ if .work -}}
+# See also ~/.config/ssh/config-hotdoc
+Host htdc-github
+  Hostname github.com
+  User git
+  IdentityFile ~/.ssh/hotdoc_github_auth.pub
+  ForwardAgent true
+{{ end -}}
