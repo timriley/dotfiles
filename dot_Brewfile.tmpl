@@ -21,7 +21,6 @@
   "imagemagick"
   "jq"
   "libdvdcss"
-  "mise"
   "moreutils"
   "overmind"
   "p7zip"
@@ -53,7 +52,14 @@
 -}}
 {{ if .personal -}}
 {{- $brews = concat $brews (list
+  "mise"
   "yt-dlp"
+)
+-}}
+{{ end -}}
+{{ if .work -}}
+{{- $brews = concat $brews (list
+  "asdf"
 )
 -}}
 {{ end -}}

@@ -10,8 +10,18 @@ if test -d (brew --prefix)"/share/fish/vendor_completions.d"
   set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
 end
 
+{{ if .personal -}}
 # mise
 mise activate fish | source
+{{ end -}}
+{{ if .work -}}
+# asdf
+set _asdf_shims "$HOME/.asdf/shims"
+if not contains $_asdf_shims $PATH
+  set -gx --prepend PATH $_asdf_shims
+end
+set --erase _asdf_shims
+{{ end -}}
 
 # OrbStack
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
