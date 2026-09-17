@@ -13,16 +13,11 @@ end
 {{ if .personal -}}
 # mise
 mise activate fish | source
-{{ end -}}
+{{ end }}
 {{ if .work -}}
 # asdf
-set _asdf_shims "$HOME/.asdf/shims"
-if not contains $_asdf_shims $PATH
-  set -gx --prepend PATH $_asdf_shims
-end
-set --erase _asdf_shims
-{{ end -}}
-
+fish_add_path --move --prepend --path "$HOME/.asdf/shims"
+{{ end }}
 # OrbStack
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
