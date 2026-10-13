@@ -34,9 +34,30 @@
 [alias]
   ap = add --patch
   co = checkout
-[url "git@github.com:"]
-  insteadOf = https://github.com/
+
 {{ if .work -}}
+# Fetch from GitHub over HTTPS (no auth needed for public repos), but always push over SSH.
+[url "git@github.com:"]
+  pushInsteadOf = https://github.com/
+
+# Use SSH for personal namespace, so private repos fetch with the personal key.
+[url "git@github.com:timriley/"]
+  insteadOf = https://github.com/timriley/
+[url "git@github.com:decafsucks/"]
+  insteadOf = https://github.com/decafsucks/
+[url "git@github.com:hanakai-rb/"]
+  insteadOf = https://github.com/hanakai-rb/
+[url "git@github.com:hanami/"]
+  insteadOf = https://github.com/hanami/
+[url "git@github.com:dry-rb/"]
+  insteadOf = https://github.com/dry-rb/
+[url "git@github.com:rom-rb/"]
+  insteadOf = https://github.com/rom-rb/
+
+# Work repos always use the work key, even from an https URL; see also ~/.ssh/config.
+[url "git@htdc-github:htdc/"]
+  insteadOf = https://github.com/htdc/
+  pushInsteadOf = https://github.com/htdc/
 [includeIf "gitdir:~/Source/hotdoc/"]
   path = config-hotdoc
 [includeIf "gitdir:~/src/hotdoc/"]

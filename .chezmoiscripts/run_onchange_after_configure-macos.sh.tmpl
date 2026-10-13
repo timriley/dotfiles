@@ -22,4 +22,7 @@ defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 2
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 2
 defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
+# Make Xcode fetch Swift packages with system git, which respects ~/.ssh/config (and the 1Password agent)
+defaults write com.apple.dt.Xcode IDEPackageSupportUseBuiltinSCM -bool NO
 {{ end -}}
