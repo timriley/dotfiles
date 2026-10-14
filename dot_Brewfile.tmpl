@@ -3,6 +3,10 @@
 {{- $taps := list
 -}}
 
+{{/* Non-official taps whose formulae Homebrew should load without `brew trust` */}}
+{{- $trustedTaps := list
+-}}
+
 {{- $brews := list
   "ack"
   "chezmoi"
@@ -60,6 +64,11 @@
 {{ if .work -}}
 {{- $brews = concat $brews (list
   "asdf"
+  "buildkite/buildkite/bk"
+)
+-}}
+{{- $trustedTaps = concat $trustedTaps (list
+  "buildkite/buildkite"
 )
 -}}
 {{ end -}}
@@ -162,6 +171,9 @@
 
 {{ range ($taps | sortAlpha | uniq) -}}
 tap "{{ . }}"
+{{ end -}}
+{{ range ($trustedTaps | sortAlpha | uniq) -}}
+tap "{{ . }}", trusted: true
 {{ end }}
 {{ range ($brews | sortAlpha | uniq) -}}
 brew "{{ . }}"
