@@ -1,0 +1,53 @@
+/* Matches Zed: Catppuccin Latte (light) / Mocha (dark), with Zed fonts. */
+
+:root,
+.light {
+  /* Fonts, from ~/.config/zed/settings.json */
+  --font-sans: "iA Writer Quattro V", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono NL", "SF Mono", Menlo, monospace;
+  --font-terminal: "JetBrains Mono NL", "SF Mono", Menlo, monospace;
+
+  /* Catppuccin Latte */
+  --canvas: #eff1f5; /* base */
+  --ink: #4c4f69; /* text */
+  --sidebar: #e6e9ef; /* mantle */
+  --primary: #8839ef; /* mauve */
+  --primary-foreground: #eff1f5;
+
+  --muted-foreground: color-mix(in oklch, var(--ink) 70%, var(--canvas));
+  --subtle-foreground: color-mix(in oklch, var(--ink) 58%, var(--canvas));
+  --readback-foreground: color-mix(in oklch, var(--ink) 64%, var(--canvas));
+
+  --destructive: #d20f39; /* red */
+  --destructive-foreground: #eff1f5;
+  --destructive-text: #d20f39;
+  --warning: #fe640b; /* peach */
+  --warning-text: #c84f08;
+  --attention: #df8e1d; /* yellow */
+  --success: #40a02b; /* green */
+  --diff-added: #40a02b;
+  --diff-removed: #d20f39;
+  --pr-merged: #8839ef;
+  --file-accent: #1e66f5; /* blue */
+}
+
+.dark {
+  /* Catppuccin Mocha */
+  --canvas: #1e1e2e; /* base */
+  --ink: #cdd6f4; /* text */
+  --sidebar: #181825; /* mantle */
+  --primary: #cba6f7; /* mauve */
+  --primary-foreground: #1e1e2e;
+
+  --destructive: #f38ba8; /* red */
+  --destructive-foreground: #1e1e2e;
+  --destructive-text: #f38ba8;
+  --warning: #fab387; /* peach */
+  --warning-text: #fab387;
+  --attention: #f9e2af; /* yellow */
+  --success: #a6e3a1; /* green */
+  --diff-added: #a6e3a1;
+  --diff-removed: #f38ba8;
+  --pr-merged: #cba6f7;
+  --file-accent: #89b4fa; /* blue */
+}
