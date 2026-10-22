@@ -10,3 +10,10 @@ include = ["*/Caffeinate.lbaction/**"]
 stripComponents = 2
 exact = true
 refreshPeriod = "744h"
+
+[".hammerspoon/Spoons/URLDispatcher.spoon"]
+type = "archive"
+url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/URLDispatcher.spoon.zip"
+stripComponents = 1
+exact = true
+refreshPeriod = "744h"

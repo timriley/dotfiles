@@ -19,4 +19,14 @@ window_mouse:init({
 })
 window_mouse:start()
 
+hs.loadSpoon("URLDispatcher")
+spoon.URLDispatcher.set_system_handler = false -- set Hammerspoon as default browser by hand instead
+spoon.URLDispatcher.default_handler = "{{ if .work }}app.zen-browser.zen{{ else }}com.apple.Safari{{ end }}"
+spoon.URLDispatcher.url_patterns = {
+{{- if .work }}
+  { "https?://meet%.google%.com", "au.id.riley.crossbench.siteapp.38184FF6-A13E-4EC2-AC57-4288E9970037" },
+{{- end }}
+}
+spoon.URLDispatcher:start()
+
 hs.notify.show("Welcome to Hammerspoon", "Have fun!", "")
