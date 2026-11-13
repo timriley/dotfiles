@@ -4,6 +4,9 @@ fpath+=("$(/opt/homebrew/bin/brew --prefix)/share/zsh/site-functions")
 eval "$(/opt/homebrew/bin/brew shellenv)"
 {{- end }}
 
+# My own binaries
+export PATH="$HOME/.local/bin:$PATH"
+
 # Use mise
 eval "$(mise activate zsh)"
 
