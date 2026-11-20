@@ -1,0 +1,64 @@
+#!/bin/bash
+#
+# Wrapper for Zed's `zed` CLI.
+#
+# `zed <dir>` focuses the Zed window that already has <dir> open. If no window
+# has it, it opens <dir> in a new window.
+#
+# How it works: Zed records each open workspace in its SQLite DB, tagged with
+# the ID of the current session. If <dir> matches the full path of a workspace
+# in that session, we run `zed -e <dir>`, which makes Zed focus that window.
+# Otherwise we run `zed -n <dir>`. This needs no Accessibility permission.
+#
+# All other uses (no args, files, flags, many paths) go to the real CLI as-is.
+#
+# Env overrides:
+#   ZED_CLI  path to Zed's real CLI (default: the `cli` binary in Zed.app)
+#   ZED_DB   path to Zed's DB (default: stable channel DB)
+
+set -u
+
+# The real CLI is the `cli` binary inside the app bundle. (The `zed` binary
+# next to it is the app itself, not the CLI.)
+zed_bin=${ZED_CLI:-}
+if [ -z "$zed_bin" ]; then
+  for app in /Applications/Zed.app "$HOME/Applications/Zed.app"; do
+    if [ -x "$app/Contents/MacOS/cli" ]; then
+      zed_bin="$app/Contents/MacOS/cli"
+      break
+    fi
+  done
+fi
+[ -x "$zed_bin" ] || { echo "zed: cannot find Zed.app's CLI (set ZED_CLI)" >&2; exit 127; }
+
+# Only handle the case of exactly one argument that is a directory.
+if [ $# -ne 1 ] || [ "${1#-}" != "$1" ] || [ ! -d "$1" ]; then
+  exec "$zed_bin" "$@"
+fi
+
+dir=$(cd "$1" && pwd -P) || exit 1
+
+zed_running() {
+  lsappinfo info -only pid -app dev.zed.Zed 2>/dev/null | grep -q 'pid = [0-9]'
+}
+
+# Print the root paths of every workspace in Zed's current session, one per
+# line. A workspace with many roots stores them newline-separated, so each root
+# gets its own line.
+open_paths() {
+  local db=${ZED_DB:-"$HOME/Library/Application Support/Zed/db/0-stable/db.sqlite"}
+  [ -r "$db" ] || return 1
+  sqlite3 -cmd '.timeout 1000' "file:$db?mode=ro" "
+    SELECT paths FROM workspaces
+    WHERE remote_connection_id IS NULL
+      AND session_id = (SELECT value FROM kv_store WHERE key = 'session_id')
+  " 2>/dev/null
+}
+
+# When Zed is not running, the DB still lists the last session's windows, so
+# only trust it while Zed runs.
+if zed_running && open_paths | grep -Fxq -- "$dir"; then
+  exec "$zed_bin" -e "$dir"
+fi
+
+exec "$zed_bin" -n "$dir"

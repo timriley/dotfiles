@@ -11,7 +11,7 @@ if test -d (brew --prefix)"/share/fish/vendor_completions.d"
 end
 
 # My own binaries
-fish_add_path --path "$HOME/.local/bin"
+fish_add_path --move --path "$HOME/.local/bin"
 
 {{ if .personal -}}
 # mise
